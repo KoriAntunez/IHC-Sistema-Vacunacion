@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <!--Meta tags-->
     <meta charset="UTF-8">
@@ -14,6 +15,7 @@
     
     <!--ARCHIVO CSS PERSONALIZADOS-->
     <link type="text/css" rel="stylesheet" href="css/estilos.css">
+
 </head>
 <body>
     <!--Encabezado 1-->
@@ -32,22 +34,101 @@
             </div>
         </div>
     </nav>
-    <!--Boton Personal Salud-->
-    <section class="container mt-3 ">
+
+    <!--Menu-->
+    <section class="container mt-1 ">
+        <!--Enunciado Superior-->
         <div class="row mx-5 d-flex justify-content-center text-center">
-                <h1 class="display-4 d-none d-sm-flex font-weight-bold text-primary my-4">¿Qué rol tiene usted?</h1>
-                <h3 class="d-flex d-sm-none font-weight-bold text-primary mx-5">¿Qué rol tiene usted?</h3>
+                <h1 class="display-4 d-none d-lg-flex font-weight-bold text-primary mt-2 mb-3">¿A qué rol pertenece usted?</h1>
+                <h2 class="d-flex d-lg-none font-weight-bold text-primary mt-5 mx-5 mb-4">¿A qué rol pertenece usted?</h2>
         </div>
-        <div class="row mx-5 d-flex justify-content-center">    
-            <div class="d-flex justify-content-sm-center">      
-                <a href="login_Adulto_Mayor.html">
-                    <img class="img-fluid rounded border" src="Img/ancianos.png" alt="">
-                </a>
+    
+        <!--Boton Adulto Mayor-->
+        <div class="row btn-group btn-group-sm mx-5 mt-2 justify-content-center d-none d-sm-flex">    
+            <a href="login_Adulto_Mayor.html" style="text-decoration:none" class="col-6 btn-group btn-group-sm justify-content-center" role="group" aria-label="Basic example">
+                <div class="boton1">
+                    <button type="button" class="btn btn-secondary boton1">
+                        <img class="img-fluid" src="Img/ancianos.png" alt="">
+                    </button>
+                </div>
+                <button type="button" class="btn btn-secondary justify-content-center" >
+                    <h2 class="text-center">
+                        Adulto Mayor
+                    </h2>
+                </button>
+            </a>
+        </div>
+
+        <a href="login_Adulto_Mayor.html" style="text-decoration:none" class="row btn-group btn-group-sm mx-5 mt-2 justify-content-center d-flex d-sm-none">        
+            <div class="col-11 btn-group btn-group-sm justify-content-center" role="group" aria-label="Basic example">
+                <div class="boton1">
+                    <button type="button" class="btn btn-secondary boton1" href="login_Adulto_Mayor.html">
+                        <img class="img-fluid" src="Img/ancianos.png" alt="">
+                    </button>
+                </div>
+                <button href="login_Adulto_Mayor.html" type="button" class="btn btn-secondary">
+                    <h3 class="text-center">Adulto Mayor</h3>
+                </button>
             </div>
-            <div class="d-flex justify-content-sm-center">      
-                <a href="login_Adulto_Mayor.html" class="btn btn-secundario btn-outline-light btn-lg btn-block text-center">Personal médico</a>
+        </a>
+       
+        <!--Boton Personal Salud -->
+        <a href="LoginPM.html" style="text-decoration:none" class="row btn-group btn-group-sm mx-5 mt-2 justify-content-center d-none d-sm-flex">   
+            <div class="col-6 btn-group btn-group-sm justify-content-center" role="group" aria-label="Basic example">
+                <div class="boton1">
+                    <button type="button" class="btn btn-secondary boton1">
+                        <img class="img-fluid" src="Img/doctor.png" alt="">
+                    </button>
+                </div>    
+
+                <button type="button" class="btn btn-secondary">
+                    <h2 class="text-center">Personal Médico</h2>
+                </button>
             </div>
-        </div>     
+        </a>
+
+        <a href="LoginPM.html" style="text-decoration:none" class="row btn-group btn-group-sm mx-5 mt-2 justify-content-center d-flex d-sm-none">    
+            <div class="col-11 btn-group btn-group-sm justify-content-center" role="group" aria-label="Basic example">
+                <div class="boton1">
+                    <button type="button" class="btn btn-secondary boton1">
+                        <img class="img-fluid" src="Img/doctor.png" alt="">
+                    </button>
+                </div>    
+
+                <button type="button" class="btn btn-secondary">
+                    <h3 class="text-center">Personal Médico</h3>
+                </button>
+            </div>
+        </a>
+
+        <!--Boton Militar-->
+        <a href="login_Militar.html" style="text-decoration:none" class="row btn-group btn-group-sm mx-5 mt-2 justify-content-center d-none d-sm-flex">     
+            <div class="col-6 btn-group btn-group-sm justify-content-center" role="group" aria-label="Basic example">
+                <div class="boton1">
+                    <button type="button" class="btn btn-secondary boton1">
+                        <img class="img-fluid"  src="Img/soldado.png" alt="">
+                    </button>
+                </div>
+                
+                <button type="button" class="btn btn-secondary">
+                    <h2 class="text-center">Militar</h2>
+                </button>
+            </div>
+        </a>
+        
+        <a href="login_Militar.html" style="text-decoration:none" class="row btn-group btn-group-sm mx-5 mt-2 justify-content-center d-flex d-sm-none">     
+            <div class="col-11 btn-group btn-group-sm justify-content-center" role="group" aria-label="Basic example">
+                <div class="boton1">
+                    <button href="#"  type="button" class="btn btn-secondary boton1">
+                        <img class="img-fluid"  src="Img/soldado.png" alt="">
+                    </button>
+                </div>
+                
+                <button type="button" class="btn btn-secondary">
+                    <h3 class="text-center">Militar</h3>
+                </button>
+            </div>
+        </a>  
     </section>
 
     <script src="js/jquery-3.5.1.min.js "></script>
