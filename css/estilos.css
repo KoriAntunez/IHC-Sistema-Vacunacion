@@ -94,6 +94,70 @@ p {
   }
 
   #wrapper.toggled #sidebar-wrapper {
+<<<<<<< Updated upstream
     margin-left: -15rem;
   }
 }
+=======
+    margin-left: -15rem; } }
+    
+
+/*estilos de la vista registro del adulto mayor*/
+/*importando estilos*/
+
+.bg-form {
+  background-color: rgba(209, 209, 209, 0.255) !important;
+  border-color: rgb(0, 0, 0);
+}
+.form-check-label{
+  font-family:'Montserrat', sans-serif;
+  font-weight:bold;
+  font-size:smaller;
+}
+label{
+  font-family:'Montserrat', sans-serif;
+  font-weight:bold;
+  font-size:medium;
+}
+h2{
+  font-family:'Montserrat', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+.form-group{
+  font-family:'Montserrat', sans-serif;
+}
+
+.btn-secondary {
+  background-color: gray !important;
+  border-color:  rgb(111, 111, 111)  !important; 
+}
+button{
+  margin-left: 10px;
+}
+
+i{
+  font-size: 2em;
+  align-items: center;
+}
+.list-group.list-group-flush a {
+  font-size: 1.2em;
+}
+h3,h4{
+  color: white;
+  margin-right: 10px;
+}
+table{
+  margin-top: 30px;
+  font-size: 1.5em;
+}
+.col-lg-4 p{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=estilos.css.map */
+>>>>>>> Stashed changes
