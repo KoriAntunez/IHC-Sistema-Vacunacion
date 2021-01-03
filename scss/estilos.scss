@@ -7,10 +7,12 @@ $cuarto: rgb(180, 177, 177);
 /*----------------------------------------
 SOBREESCRIBIENDO  LOS ESTILOS DE BOOTSTRAP
 ------------------------------------------*/
+
 .bg-primary {
-	background-color: $principal !important;
+    background-color: $principal !important;
 }
-.bg-tercero{
+
+.bg-tercero {
     background-color: $tercero !important;
 }
 
@@ -23,7 +25,7 @@ SOBREESCRIBIENDO  LOS ESTILOS DE BOOTSTRAP
     border-color: darken($principal, 10%) !important;
 }
 
-.btn-secundario{
+.btn-secundario {
     background-color: $cuarto !important;
     border-color: darken($cuarto, 10%) !important;
     font-size: 26px;
@@ -37,6 +39,8 @@ SOBREESCRIBIENDO  LOS ESTILOS DE BOOTSTRAP
     background-color: darken($principal, 20%)!important;
     border-color: darken($principal, 30%)!important;
 }
+
+
 /* estilos del diseño*/
 
 html {
@@ -53,4 +57,48 @@ p {
 
 .primary {
     color: #8B2B16;
+}
+
+//wrap
+#wrapper {
+    overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+    width: 15rem;
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -15rem;
+    }
 }
