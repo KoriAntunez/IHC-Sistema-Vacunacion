@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/*----------------------------------------
+SOBREESCRIBIENDO  LOS ESTILOS DE BOOTSTRAP
+------------------------------------------*/
+.bg-primary {
+  background-color: #8B2B16 !important;
+}
+
+.bg-tercero {
+  background-color: gray !important;
+}
+
+.text-primary {
+  color: #8B2B16 !important;
+}
+
+.btn-primary {
+  background-color: #8B2B16 !important;
+  border-color: #5f1d0f !important;
+}
+
+.btn-secundario {
+  background-color: #b4b1b1 !important;
+  border-color: #9b9797 !important;
+  font-size: 26px;
+}
+
+.btn-primary:hover {
+  background-color: #5f1d0f !important;
+}
+
+.btn-primary:active {
+  background-color: #331008 !important;
+  border-color: #070201 !important;
+}
+
+/* estilos del diseño*/
+html {
+  font-size: 14px;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px #0000006b;
+}
+
+p {
+  display: inline-flex;
+}
+
+.primary {
+  color: #8B2B16;
+}

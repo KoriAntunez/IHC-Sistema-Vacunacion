@@ -1,0 +1,56 @@
+$texto:red;
+$principal:#8B2B16;
+$secundario:orange;
+$tercero: gray;
+$cuarto: rgb(180, 177, 177);
+
+/*----------------------------------------
+SOBREESCRIBIENDO  LOS ESTILOS DE BOOTSTRAP
+------------------------------------------*/
+.bg-primary {
+	background-color: $principal !important;
+}
+.bg-tercero{
+    background-color: $tercero !important;
+}
+
+.text-primary {
+    color: $principal !important;
+}
+
+.btn-primary {
+    background-color: $principal !important;
+    border-color: darken($principal, 10%) !important;
+}
+
+.btn-secundario{
+    background-color: $cuarto !important;
+    border-color: darken($cuarto, 10%) !important;
+    font-size: 26px;
+}
+
+.btn-primary:hover {
+    background-color: darken($principal, 10%)!important;
+}
+
+.btn-primary:active {
+    background-color: darken($principal, 20%)!important;
+    border-color: darken($principal, 30%)!important;
+}
+/* estilos del diseño*/
+
+html {
+    font-size: 14px;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px #0000006b;
+}
+
+p {
+    display: inline-flex;
+}
+
+.primary {
+    color: #8B2B16;
+}
