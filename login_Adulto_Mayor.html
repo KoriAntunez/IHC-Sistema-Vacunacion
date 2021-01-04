@@ -23,8 +23,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 text-left ">
-                    <h1 class="font-weight-bold display-4 d-none d-sm-flex">Sistema de Vacunación <br class="d-none d-lg-inline "> COVID 19</h1>
-                    <h2 class="font-weight-bold d-flex d-sm-none">Sistema de Vacunación <br class="d-none d-lg-inline "> COVID 19</h2>
+                    <h1 class="font-weight-bold display-4 d-none d-sm-flex">Sistema de Vacunación <br
+                            class="d-none d-lg-inline "> COVID 19</h1>
+                    <h2 class="font-weight-bold d-flex d-sm-none">Sistema de Vacunación <br class="d-none d-lg-inline ">
+                        COVID 19</h2>
                 </div>
                 <div class="d-none d-lg-flex col-lg-4 my-auto">
                     <a href="https://www.gob.pe/minsa/">
@@ -49,21 +51,27 @@
     <!-- Sección de Formulario de Login-->
     <section class="container mt-3">
         <div class="row mx-3">
-            <form class="col-lg-6 my-auto">
-                <h1 class="h2 d-none d-sm-flex mt-2 mb-4 ">Llene sus datos de Adulto Mayor</h1>
-                <h3 class="d-flex d-sm-none mt-2 mb-4">Llene sus datos de Adulto Mayor</h3>
+            <form class="col-lg-5 my-auto">
+                <h1 class="h2 d-none d-sm-flex mt-2 mb-4 ">Llene sus datos personales</h1>
+                <h3 class="d-flex d-sm-none mt-2 mb-4">Llene sus datos personales</h3>
+                <div class="form-row mt-4">
+                    <div class="col">
+                        <img src="img/dni-ejemplo.png" alt="" class="img-fluid mt-2 mb-4 " style="height: auto; width: auto;" >
+                    </div>
+                </div>
 
                 <div class="form-row">
                     <div class="col-8">
-                        <input type="text" class="form-control form-control-lg" placeholder="DNI">
+                        <input type="text" class="form-control form-control-lg" placeholder="Número de DNI">
                     </div>
                     <div class="col-4">
-                        <input type="text" class="form-control form-control-lg" placeholder="UBIGEO">
+                        <input type="text" class="form-control form-control-lg" placeholder="CUI">
                     </div>
                 </div>
                 <div class="form-row mt-4">
                     <div class="col">
-                        <input type="text" class="form-control form-control-lg" placeholder="Fecha de emisión de DNI">
+                        <input type="text" id="date" class="form-control form-control-lg"
+                            placeholder="Fecha de emisión del DNI">
                     </div>
                 </div>
                 <div class="form-row mt-4">
@@ -72,24 +80,42 @@
                     </div>
                 </div>
 
-                <button class="btn btn-lg btn-primary ml-auto mt-5">Ingresar</button>
+                <div class="form-row text-center justify-content-center align-items-center">
+                    <div class="col">
+                        <a href="RegistroAM.html" class="btn btn-lg btn-primary ml-auto mt-5">
+                            <i class="fas fa-sign-in-alt"></i> Ingresar</i> </a>
+
+                        <a href="seleccion_Usuario.html" class="btn btn-lg btn-secondary ml-auto mt-5 ">
+                            <i class="fas fa-window-close"></i> Cancelar</a>
+
+                    </div>
+                </div>
+
             </form>
 
 
             <!-- Sección de MINSA y Anuncio-->
-            <div class="col-lg-6 mt-3 ml-auto my-4">
+            <div class="col-lg-7 mt-3 ml-auto my-4">
                 <div class="mt-4 embed-responsive embed-responsive-16by9 mb-2">
-                    <iframe class="embed-responsive-item" height="auto" src="https://www.youtube.com/embed/W2Nmz9ViOFA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="embed-responsive-item" height="auto" src="https://www.youtube.com/embed/W2Nmz9ViOFA"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
             </div>
         </div>
+
+       
     </section>
+
+
+
     <!-- Reserva de derechos-->
     <footer class="mt-auto bg-dark text-light text-center">
         <p> IHC-Grupo 4 Copyright © 2021 Todos los derechos reservados</p>
     </footer>
 
-
+    <script src="https://kit.fontawesome.com/160f79963e.js" crossorigin="anonymous"></script>
     <script src="js/jquery-3.5.1.min.js "></script>
     <script src="js/bootstrap.min.js "></script>
     <script src="js/popper.min.js "></script>

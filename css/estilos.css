@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 /*----------------------------------------
 SOBREESCRIBIENDO  LOS ESTILOS DE BOOTSTRAP
 ------------------------------------------*/
@@ -58,6 +59,7 @@ p {
 
 #wrapper {
   overflow-x: hidden;
+
 }
 
 #sidebar-wrapper {
@@ -94,11 +96,6 @@ p {
   }
 
   #wrapper.toggled #sidebar-wrapper {
-<<<<<<< Updated upstream
-    margin-left: -15rem;
-  }
-}
-=======
     margin-left: -15rem; } }
     
 
@@ -106,8 +103,8 @@ p {
 /*importando estilos*/
 
 .bg-form {
-  background-color: rgba(209, 209, 209, 0.255) !important;
-  border-color: rgb(0, 0, 0);
+  background-color: rgba(209, 209, 209, 0.268) !important;
+
 }
 .form-check-label{
   font-family:'Montserrat', sans-serif;
@@ -139,25 +136,21 @@ button{
   margin-left: 10px;
 }
 
-i{
+.list-group i{
   font-size: 2em;
   align-items: center;
 }
 .list-group.list-group-flush a {
   font-size: 1.2em;
 }
-h3,h4{
-  color: white;
-  margin-right: 10px;
-}
+
 table{
-  margin-top: 30px;
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 .col-lg-4 p{
   font-size: 1.3em;
   font-weight: bold;
 }
 
+
 /*# sourceMappingURL=estilos.css.map */
->>>>>>> Stashed changes
