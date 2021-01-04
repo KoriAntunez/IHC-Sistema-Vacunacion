@@ -138,7 +138,6 @@ button{
 
 .list-group i{
   font-size: 2em;
-  align-items: center;
 }
 .list-group.list-group-flush a {
   font-size: 1.2em;
@@ -149,7 +148,6 @@ table{
 }
 .col-lg-4 p{
   font-size: 1.3em;
-  font-weight: bold;
 }
 
 
