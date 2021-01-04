@@ -52,39 +52,52 @@
     <!-- Sección de Formulario de Login-->
     <section class="container mt-3">
         <div class="row mx-3">
-            <form class="col-lg-6 my-auto">
+            <form class="col-lg-6 my-auto needs-validation" id="login-form" action="" method="POST" novalidate>
                 <h1 class="h2 d-none d-sm-flex mt-2 mb-4 ">Llene sus datos personales</h1>
                 <h3 class="d-flex d-sm-none mt-2 mb-4">Llene sus datos personales</h3>
-
                 <div class="form-row">
                     <div class="col-8">
-                            <input type="text" class="form-control form-control-lg" placeholder="Número de DNI(1)">
+                        <input type="text" id="dni" class="form-control form-control-lg" placeholder="Número de DNI(1)"
+                            aria-describedby="inputGroupPrepend1"required>
+                            <div class="valid-feedback">¡Correcto!</div>
+                            <div class="invalid-feedback">Complete con el número de DNI</div>
+
                     </div>
+
                     <div class="col-3">
-                        <input type="text" class="form-control form-control-lg" placeholder="CUI(2)">
+                        <input type="text" id="cui" class="form-control form-control-lg" placeholder="CUI(2)"
+                            aria-describedby="inputGroupPrepend2"required>
+                            <div class="valid-feedback">¡Correcto!</div>
+                            <div class="invalid-feedback">Complete con el número de CUI</div>
+
                     </div>
                     <div class="col-1">
-                        <a href="#"  data-toggle="popover" data-img="Img/DNI.png" title="Partes del DNI" >
-                            <img class="img-fluid " src="Img/informacion.png " alt=" "> 
+                        <a href="#" data-toggle="popover" data-img="Img/DNI.png" title="Partes del DNI">
+                            <img class="img-fluid " src="Img/informacion.png " alt=" ">
                         </a>
                     </div>
                 </div>
                 <div class="form-row mt-4">
                     <div class="col">
-                        <input type="text" id="date" class="form-control form-control-lg"
-                            placeholder="Fecha de emisión del DNI(3)">
+                        <input type="text" id="fecha-emision" class="form-control form-control-lg"
+                            placeholder="Fecha de emisión del DNI(3)" aria-describedby="inputGroupPrepend3"required>
+                            <div class="valid-feedback">¡Correcto!</div>
+                            <div class="invalid-feedback">Complete con la fecha de emisión</div>
                     </div>
                 </div>
                 <div class="form-row mt-4">
                     <div class="col">
-                        <input type="text" class="form-control form-control-lg" placeholder="Teléfono o Celular">
+                        <input type="text" id="" class="form-control form-control-lg" placeholder="Teléfono o Celular"
+                            aria-describedby="inputGroupPrepend4"required>
+                            <div class="valid-feedback">¡Correcto!</div>
+                            <div class="invalid-feedback">Complete con el número de teléfono o celular</div>
                     </div>
                 </div>
 
                 <div class="form-row text-center mb-3 justify-content-between align-items-center mt-5">
                     <div class="col">
-                        <a href="RegistroAM.html" class="btn btn-lg btn-primary ml-auto">
-                            <i class="fas fa-sign-in-alt"></i> Ingresar</i> </a>
+                        <button class="btn btn-lg btn-primary ml-auto" type="submit"> <i class="fas fa-sign-in-alt"></i>
+                            Ingresar</button>
                     </div>
                     <div class="col">
                         <a href="seleccion_Usuario.html" class="btn btn-lg btn-secondary ml-auto">
@@ -107,7 +120,7 @@
             </div>
         </div>
 
-       
+
     </section>
 
 
@@ -117,6 +130,29 @@
         <p> IHC-Grupo 4 Copyright © 2021 Todos los derechos reservados</p>
     </footer>
 
+
+
+    <!--Validacion-->
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
     <script src="https://kit.fontawesome.com/160f79963e.js" crossorigin="anonymous"></script>
     <script src="js/jquery-3.5.1.min.js "></script>
     <script src="js/bootstrap.min.js "></script>
