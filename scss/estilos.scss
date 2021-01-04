@@ -62,7 +62,10 @@ p {
 .boton1 {
     width: 100px;
     height: 100px;
+}
 
+.boton-inicio:hover {
+    box-shadow: 0 0 10px #0000006b;
 }
 
 //wrap
