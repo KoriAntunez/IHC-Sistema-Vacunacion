@@ -2,26 +2,32 @@
 <html lang="es">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--Meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!--TITULO DE PÁGINA-->
     <link rel="shortcut icon" href="Img/Escudo.png" type="image/x-icon">
     <title>Sistema de Vacunación COVID 19</title>
-    <!-- Bootstrap CSS -->
-    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
-    <!-- Custom CSS -->
-    <link type="text/css" rel="stylesheet" href="css/estilos.css" />
-    <title>Personal Médico</title>
+
+    <!--ARCHIVOS CSS BOOTSTRAP 4-->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!--ARCHIVO CSS PERSONALIZADOS-->
+    <link type="text/css" rel="stylesheet" href="css/estilos.css">
+
 </head>
 
 <body class="d-flex flex-column min-vh-100">
-    <nav class=" navbar navbar-dark navbar-expand-sm text-light bg-primary">
+    <!--Encabezado 1-->
+    <nav class=" navbar navbar-dark navbar-expand-sm text-light bg-primary ">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 text-left">
-                    <h1 class="font-weight-bold display-4 d-none d-sm-flex">Sistema de Vacunación <br class="d-none d-lg-inline"> COVID 19</h1>
-                    <h2 class="font-weight-bold d-flex d-sm-none">Sistema de Vacunación <br class="d-none d-lg-inline "> COVID 19</h2>
+                <div class="col-lg-8 text-left ">
+                    <h1 class="font-weight-bold display-4 d-none d-sm-flex">Sistema de Vacunación <br
+                            class="d-none d-lg-inline "> COVID 19</h1>
+                    <h2 class="font-weight-bold d-flex d-sm-none">Sistema de Vacunación <br class="d-none d-lg-inline ">
+                        COVID 19</h2>
                 </div>
                 <div class="d-none d-lg-flex col-lg-4 my-auto">
                     <a href="https://www.gob.pe/minsa/">
@@ -31,7 +37,6 @@
             </div>
         </div>
     </nav>
-
     <!--Encabezado 2-->
     <nav class=" navbar navbar-dark navbar-expand-sm text-light bg-tercero">
         <div class="container">
@@ -55,7 +60,7 @@
                     <div class="col-8">
                         <input type="text" id="dni" pattern="[0-9]{8}" class="form-control form-control-lg"
                             placeholder="DNI (1)" aria-describedby="inputGroupPrepend1" required>
-                        <small id="dniHelp" class="form-text text-muted">El número debe contener como máximo 8
+                        <small id="dniHelp" class="form-text text-muted">El número de DNI debe contener como máximo 8
                             caracteres</small>
                         <div class="valid-feedback">¡Correcto!</div>
                         <div id="dni-feedback" class="invalid-feedback">Proporcione un número de DNI válido</div>
@@ -64,7 +69,7 @@
                     <div class="col-3">
                         <input type="text" id="cui" pattern="[0-9]{1}" class="form-control form-control-lg"
                             placeholder="CUI (2)" aria-describedby="inputGroupPrepend2" required>
-                        <small id="dniHelp" class="form-text text-muted">El número debe contener como máximo 1
+                        <small id="dniHelp" class="form-text text-muted">El número de CUI debe contener como máximo 1
                             caracter</small>
                         <div class="valid-feedback">¡Correcto!</div>
                         <div id="dni-feedback" class="invalid-feedback">Proporcione un número de CUI válido</div>
@@ -91,13 +96,12 @@
 
                 <div class="form-row mt-4">
                     <div class="col">
-                        <input type="text" id="cod-institucion" pattern="[0-9]{8}" class="form-control form-control-lg"
-                            placeholder="Código de Institución" aria-describedby="inputGroupPrepend1" required>
-                        <small id="dniHelp" class="form-text text-muted">El código de institución debe contener como
-                            máximo 8
-                            caracteres</small>
-                        <div class="valid-feedback">¡Correcto!</div>
-                        <div id="dni-feedback" class="invalid-feedback">Proporcione un código de institución válido</div>
+                            <input type="text" id="" pattern="[0-9]{8}" class="form-control form-control-lg"
+                                placeholder="Número de celular" aria-describedby="inputGroupPrepend4" required>
+                            <small id="dniHelp" class="form-text text-muted">El código de institución debe contener como máximo 8
+                                caracteres</small>
+                            <div class="valid-feedback">¡Correcto!</div>
+                            <div class="invalid-feedback">Proporcione un código de institución válido</div>       
                     </div>
                 </div>
 
@@ -126,6 +130,7 @@
             </div>
         </div>
 
+
     </section>
 
 
@@ -139,10 +144,11 @@
 
     <!--Validacion-->
     <script>
-
+       
         (function () {
             'use strict';
             window.addEventListener('load', function () {
+               
                 var forms = document.getElementsByClassName('needs-validation');
                 // Prevenir submit
                 var validation = Array.prototype.filter.call(forms, function (form) {
@@ -158,7 +164,7 @@
 
                 var inputs = document.getElementsByClassName('form-control')
 
-                // Validación en tiempo real
+                 // Validación en tiempo real
                 var validation = Array.prototype.filter.call(inputs, function (input) {
 
                     input.addEventListener('blur', function (event) {

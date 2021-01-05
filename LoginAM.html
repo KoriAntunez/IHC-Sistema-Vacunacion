@@ -60,7 +60,7 @@
                     <div class="col-8">
                         <input type="text" id="dni" pattern="[0-9]{8}" class="form-control form-control-lg"
                             placeholder="DNI (1)" aria-describedby="inputGroupPrepend1" required>
-                        <small id="dniHelp" class="form-text text-muted">El número debe contener como máximo 8
+                        <small id="dniHelp" class="form-text text-muted">El número de DNI debe contener como máximo 8
                             caracteres</small>
                         <div class="valid-feedback">¡Correcto!</div>
                         <div id="dni-feedback" class="invalid-feedback">Proporcione un número de DNI válido</div>
@@ -69,7 +69,7 @@
                     <div class="col-3">
                         <input type="text" id="cui" pattern="[0-9]{1}" class="form-control form-control-lg"
                             placeholder="CUI (2)" aria-describedby="inputGroupPrepend2" required>
-                        <small id="dniHelp" class="form-text text-muted">El número debe contener como máximo 1
+                        <small id="dniHelp" class="form-text text-muted">El número de CUI debe contener como máximo 1
                             caracter</small>
                         <div class="valid-feedback">¡Correcto!</div>
                         <div id="dni-feedback" class="invalid-feedback">Proporcione un número de CUI válido</div>
@@ -144,13 +144,13 @@
 
     <!--Validacion-->
     <script>
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
+       
         (function () {
             'use strict';
             window.addEventListener('load', function () {
-                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+               
                 var forms = document.getElementsByClassName('needs-validation');
-                // Loop over them and prevent submission
+                // Prevenir submit
                 var validation = Array.prototype.filter.call(forms, function (form) {
                     form.addEventListener('submit', function (event) {
                         if (form.checkValidity() === false) {
@@ -164,7 +164,7 @@
 
                 var inputs = document.getElementsByClassName('form-control')
 
-                // loop over each input and watch blue event
+                 // Validación en tiempo real
                 var validation = Array.prototype.filter.call(inputs, function (input) {
 
                     input.addEventListener('blur', function (event) {
