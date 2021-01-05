@@ -55,52 +55,53 @@
             <form class="col-lg-6 my-auto needs-validation" id="login-form" action="" method="POST" novalidate>
                 <h1 class="h2 d-none d-sm-flex mt-2 mb-4 ">Llene sus datos personales</h1>
                 <h3 class="d-flex d-sm-none mt-2 mb-4">Llene sus datos personales</h3>
+
                 <div class="form-row">
                     <div class="col-8">
-                        
-                        <input type="text" id="dni" pattern="[0-9]{8}" class="form-control form-control-lg" placeholder="DNI(1)"
-                            aria-describedby="inputGroupPrepend1" required>
-                            <small id="dniHelp" class="form-text text-muted">El número debe contener como máximo 8 caracteres</small>
-                            <div class="valid-feedback">¡Correcto!</div>
-                   
-                            <div id="dni-feedback" class="invalid-feedback">Proporcione un número de DNI válido</div>
-
+                        <input type="text" id="dni" pattern="[0-9]{8}" class="form-control form-control-lg"
+                            placeholder="DNI (1)" aria-describedby="inputGroupPrepend1" required>
+                        <small id="dniHelp" class="form-text text-muted">El número debe contener como máximo 8
+                            caracteres</small>
+                        <div class="valid-feedback">¡Correcto!</div>
+                        <div id="dni-feedback" class="invalid-feedback">Proporcione un número de DNI válido</div>
                     </div>
 
                     <div class="col-3">
-                        
-                        <input type="text" id="cui" pattern="[0-9]{1}" class="form-control form-control-lg" placeholder="CUI(2)"
-                            aria-describedby="inputGroupPrepend2"required>
-                            <small id="dniHelp" class="form-text text-muted">El número debe contener como máximo 1 caracter</small>
-                            <div class="valid-feedback">¡Correcto!</div>
-                        
-                            <div id="dni-feedback" class="invalid-feedback">Proporcione un número de CUI válido</div>
+                        <input type="text" id="cui" pattern="[0-9]{1}" class="form-control form-control-lg"
+                            placeholder="CUI (2)" aria-describedby="inputGroupPrepend2" required>
+                        <small id="dniHelp" class="form-text text-muted">El número debe contener como máximo 1
+                            caracter</small>
+                        <div class="valid-feedback">¡Correcto!</div>
+                        <div id="dni-feedback" class="invalid-feedback">Proporcione un número de CUI válido</div>
                     </div>
+
                     <div class="col-1">
                         <a href="#" data-toggle="popover" data-img="Img/DNI.png" title="Partes del DNI">
                             <img class="img-fluid " src="Img/informacion.png " alt=" ">
                         </a>
                     </div>
                 </div>
+
                 <div class="form-row mt-4">
                     <div class="col">
-                       
                         <input type="text" id="fecha-emision" class="form-control form-control-lg" auto-slash="/"
-                            placeholder="Fecha de Emisión(3)" aria-describedby="inputGroupPrepend3" required pattern="(?:(?:(?:0[1-9]|[12][0-9])[/-]?0[1-9]|1[0-2])|30[/-]?(?:(?:0[13-9]|1[0-2]))|31[/-]?(?:(?:0[13578]|1[02])))[/-]?(?:19|20)[0-9]{2}">
-                            <small id="dniHelp" class="form-text text-muted">La fecha debe seguir el siguiente formato: dd/mm/yyyy</small>
-                            <div class="valid-feedback">¡Correcto!</div>
-                            <div class="invalid-feedback">Proporcione una fecha de emisión válida</div>
-                            
-                    </div> 
+                            placeholder="Fecha de Emisión (3)" aria-describedby="inputGroupPrepend3" required
+                            pattern="(0?[1-9]|[12][0-9]|3[01])/(0?[1-9]|1[012])/\d{4}">
+                        <small id="dniHelp" class="form-text text-muted ">La fecha de emisión debe seguir el siguiente
+                            formato: dd/mm/yyyy</small>
+                        <div class="valid-feedback">¡Correcto!</div>
+                        <div class="invalid-feedback">Proporcione una fecha de emisión válida</div>
+                    </div>
                 </div>
+
                 <div class="form-row mt-4">
                     <div class="col">
-                       
-                        <input type="text" id=""  pattern="[0-9]{9}" class="form-control form-control-lg" placeholder="Número de celular"
-                            aria-describedby="inputGroupPrepend4"required>
-                            <small id="dniHelp" class="form-text text-muted">El número de celular debe contener como máximo 9 caracteres</small>
+                            <input type="text" id="" pattern="[0-9]{9}" class="form-control form-control-lg"
+                                placeholder="Número de celular" aria-describedby="inputGroupPrepend4" required>
+                            <small id="dniHelp" class="form-text text-muted">El número de celular debe contener como
+                                máximo 9 caracteres </small>
                             <div class="valid-feedback">¡Correcto!</div>
-                            <div class="invalid-feedback">Proporcione un número de celular válido.</div>
+                            <div class="invalid-feedback">Proporcione un número de celular válido</div>       
                     </div>
                 </div>
 
@@ -112,7 +113,6 @@
                     <div class="col">
                         <a href="seleccion_Usuario.html" class="btn btn-lg btn-secondary ml-auto">
                             <i class="fas fa-window-close"></i> Cancelar</a>
-
                     </div>
                 </div>
 
@@ -156,11 +156,31 @@
                         if (form.checkValidity() === false) {
                             event.preventDefault();
                             event.stopPropagation();
-                           
+
                         }
                         form.classList.add('was-validated');
                     }, false);
                 });
+
+                var inputs = document.getElementsByClassName('form-control')
+
+                // loop over each input and watch blue event
+                var validation = Array.prototype.filter.call(inputs, function (input) {
+
+                    input.addEventListener('blur', function (event) {
+                        // reset
+                        input.classList.remove('is-invalid')
+                        input.classList.remove('is-valid')
+
+                        if (input.checkValidity() === false) {
+                            input.classList.add('is-invalid')
+                        }
+                        else {
+                            input.classList.add('is-valid')
+                        }
+                    }, false);
+                });
+
             }, false);
         })();
     </script>
