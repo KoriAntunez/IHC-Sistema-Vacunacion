@@ -46,21 +46,36 @@
 
     <div class="d-flex" id="wrapper" class="toggled">
 
-        <!-- Sidebar -->
-        <div class="bg-light border-right" id="sidebar-wrapper">
-            <div class="sidebar-heading h4">MENÚ DE OPCIONES</div>
-            <div class="list-group list-group-flush d-inline-flex align-items-center">
-                <a href="#" class="list-group-item list-group-item-action bg-light disabled font-weight-bolder">
-                    <i class="fas fa-user"></i> Información Personal y Turnos</a>
-                <a href="report-medico.html" class="list-group-item list-group-item-action bg-light">
-                    <i class="fas fa-question"></i> Consultar fecha de Vacunación</a>
-                <a href="#" class="list-group-item list-group-item-action bg-light">
-                    <i class="fas fa-file-signature"></i> Solicitar cambio de turno</a>
-                <a href="Seleccion_Personal.html" class="list-group-item list-group-item-action bg-light">
-                    <i class="fas fa-sign-out-alt"></i> Salir</a>
+<!-- Sidebar -->
+<div class="bg-light border-right" id="sidebar-wrapper">
+    <div class="sidebar-heading h4 text-secundario">MENÚ DE OPCIONES</div>
+    <div class="list-group list-group-flush d-inline-flex align-items-center">
+
+        <!-- Consultar fecha de vacunacion -->
+        <a href="report-medico.html" class="list-group-item list-group-item-action bg-light ">
+            <div class="row">
+                <div class="col-2"><i class="fas fa-question"></i></div>
+                <div class="col-10">Consultar Turno de Vacunación</div>
             </div>
-        </div>
-        <!-- /#sidebar-wrapper -->
+        </a>
+
+        <!-- Información personal y turnos -->
+        <a href="#" class="list-group-item list-group-item-action bg-light  disabled font-weight-bolder">
+            <div class="row">
+                <div class="col-2"><i class="fas fa-id-card"></i></div>
+                <div class="col-10">Información personal y turnos</div>
+            </div>
+        </a>
+        <!-- Salir -->
+        <a href="home.html" class="list-group-item list-group-item-action bg-light">
+            <div class="row">
+                <div class="col-2"><i class="fas fa-sign-out-alt"></i></div>
+                <div class="col-10">Salir</div>
+            </div>
+        </a>
+    </div>
+</div>
+
 
         <!-- Page Content -->
         <div id="page-content-wrapper">
