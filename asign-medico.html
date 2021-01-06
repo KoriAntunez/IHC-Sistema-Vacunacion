@@ -97,96 +97,129 @@
             <div class="container ">
                 <div class="col-12  ">
                     <!-- cabecera -->
-                    <div class="row mt-5 border-bottom">
-                        <h3 class="font-weight-bold d-none d-sm-flex "> Registro de Personal Médico </h3>
-                        <h4 class="font-weight-bold d-flex d-sm-none "> Registro de Personal Médico </h4>
+                    <div class="row mt-4 border-bottom">
+                        <h3 class="font-weight-bold d-none d-sm-flex "> Asignación de Turno a Personal Médico</h3>
+                        <h4 class="font-weight-bold d-flex d-sm-none "> Asignación de Turno a Personal Médico</h4>
                     </div>
                     <!-- Formulario -->
                     <!-- Fila 1 -->
-                    <div class="row mt-5">
+                    <div class="row mt-4">
 
                             <div class="col-5 mr-2">
                                 <div class="row">
-                                       <p>Nombres:</p>
+                                       <p>DNI:</p>
                                 </div>
                                 <div class="row">
-                                    <input type="text" class="form-control form-control-lg" placeholder="Nombres"
-                                    aria-describedby="inputGroupPrepend1"required>
-                                </div>
-                            </div>
-
-                            <div class="col-5">
-                                <div class="row">
-                                       <p>Apellidos: </p>
-                                </div>
-                                <div class="row">
-                                    <input type="text" class="form-control form-control-lg" placeholder="Apellidos"
+                                    <input type="text" class="form-control form-control-lg" placeholder="Número de DNI"
                                     aria-describedby="inputGroupPrepend1"required>
                                 </div>
                             </div>
                     </div>
-                    <!-- Fila 2 -->
-                    <div class="row mt-5">
-                        <div class="col-4 mr-2">
-                            <div class="row">
-                                   <p>DNI: </p>
+                </div>
+                    <div class="col-12 mt-5 mb-4">
+                        <!-- cabecera -->
+                        <div class="row mt-4 border-bottom">
+                            <h3 class="font-weight-bold d-none d-sm-flex "> Asignación a sede de vacunación</h3>
+                            <h4 class="font-weight-bold d-flex d-sm-none "> Asignación a sede de vacunación</h4>
+                        </div>
+                        <!-- Formulario -->                    
+                        <!-- Fila 1 -->
+                        <div class="row mt-4">
+                            <div class="col-3 mr-2">
+                                <div class="row">
+                                    <p>Departamento: </p>
+                             </div>
+                                 <select name="my_html_select_box" class="form-control form-control-lg">
+    
+                                     <option selected="yes">Lima </option>
+                                     <option >Ancash</option>
+                                     <option>La Libertad</option>
+                                 
+                                 </select>           
                             </div>
-                            <div class="row">
-                                <input type="text" class="form-control form-control-lg" placeholder="Numero DNI"
-                                aria-describedby="inputGroupPrepend1"required>
+                            <div class="col-3 mr-2">
+                                <div class="row">
+                                       <p>Provincia: </p>
+                                </div>
+                                    <select name="my_html_select_box" class="form-control form-control-lg">
+    
+                                        <option selected="yes">Lima </option>
+                                        <option >Huaraz</option>
+                                        <option>Trujillo</option>
+                                    
+                                    </select>                            
+                            </div>
+                            <div class="col-4">
+                                <div class="row">
+                                    <p>Distrito: </p>
+                             </div>
+                                <select name="my_html_select_box" class="form-control form-control-lg">
+    
+                                    <option selected="yes">Jesus María </option>
+                                    <option >Lince</option>
+                                    <option>Puente Piedra</option>
+                                
+                                </select> 
+                            </div>
+                        
+                        </div>
+                        <!-- Fila 2 -->
+                        <div class="row mt-4">
+                            <div class="col-10">
+                                <div class="row">
+                                       <p>Centro de Salud: </p>
+                                </div>
+                                <div class="row">
+                                    <input type="text" class="form-control form-control-lg" placeholder="Nombre de centro de Salud"
+                                    aria-describedby="inputGroupPrepend1"required>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-2 mr-2">
-                            <div class="row">
-                                   <p>CUI: </p>
+    
+                        <!-- Fila 3 -->
+                        <div class="row mt-4">
+                            <div class="col-4 mr-2">
+                                <div class="row">
+                                       <p>Pabellón: </p>
+                                </div>
+                                <div class="row">
+                                    <input type="text" class="form-control form-control-lg" placeholder="Pabellón "
+                                    aria-describedby="inputGroupPrepend1"required>
+                                </div>
                             </div>
-                            <div class="row">
-                                <input type="text" class="form-control form-control-lg" placeholder="CUI"
-                                aria-describedby="inputGroupPrepend1"required>
+                            <div class="col-3 mr-2">
+                                <div class="row">
+                                       <p>Horario de pabellón: </p>
+                                </div>
+                                <div class="row">
+                                    <input type="text" class="form-control form-control-lg" placeholder="Horario de pabellón"
+                                    aria-describedby="inputGroupPrepend1"required>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="row">
-                                   <p>Fecha de emisión: </p>
-                            </div>
-                            <div class="row">
-                                <input type="date" class="form-control form-control-lg" placeholder="dd/mm/aaaa"
-                                aria-describedby="inputGroupPrepend1"required>
+                            <div class="col-3 ">
+                                <div class="row">
+                                       <p>Turno: </p>
+                                </div>
+                                <select name="my_html_select_box" class="form-control form-control-lg">
+    
+                                    <option selected="yes">Turno 1</option>
+                                    <option >Turno 2</option>
+                                    <option>Turno 3</option>
+                                
+                                </select>
                             </div>
                         </div>                    
                     </div>
 
-                    <!-- Fila 4 -->
-                    <div class="row mt-5">
-                        <div class="col-5 mr-2">
-                            <div class="row">
-                                   <p>Número de celular: </p>
-                            </div>
-                            <div class="row">
-                                <input type="text" class="form-control form-control-lg" placeholder="Número de celular"
-                                aria-describedby="inputGroupPrepend1"required>
-                            </div>
-                        </div>
-                        <div class="col-5 mr-2">
-                            <div class="row">
-                                   <p>Número de carnet militar: </p>
-                            </div>
-                            <div class="row">
-                                <input type="text" class="form-control form-control-lg" placeholder="Código de colegiatura"
-                                aria-describedby="inputGroupPrepend1"required>
-                            </div>
-                        </div>                        
-                    </div>
-                </div>
-                
-                </div>
-            </div>
-         </div>
+
+             </div>
+        </div>
+    </div>
     <!-- botones -->
-        <div class="form-row mb-2 text-center justify-content-center rounded">
+        <div class="form-row mb-4 text-center justify-content-center rounded">
             <div class="form-group">
                 <a href="#" class="btn btn-lg btn-primary">
-                    <i class="fas fa-edit"></i> Registrar</i> </a>
+                    <i class="fas fa-edit"></i> Asignar</i> </a>
 
                 <a href="PanelPM.html" class="btn btn-lg btn-secondary">
                     <i class="fas fa-window-close"></i> Cancelar </a>
