@@ -19,10 +19,12 @@
     <nav class=" navbar navbar-dark navbar-expand-sm text-light bg-primary">
         <div class="container">
             <a href="#" class="navbar-brand">
-                <img class="d-none figure-img rounded-circle border-dark shadow d-lg-inline-flex" height="75px" src="Img/perfil-vacio.webp" alt="">
+                <img class="d-none figure-img rounded-circle border-dark shadow d-lg-inline-flex" height="75px"
+                    src="Img/perfil-vacio.webp" alt="">
                 <h3 class="d-none d-lg-inline-flex ml-3">Nombre Apellido</h3>
 
-                <img class="d-lg-none figure-img rounded-circle border-dark shadow d-inline-flex" height="50px" src="Img/perfil-vacio.webp" alt="">
+                <img class="d-lg-none figure-img rounded-circle border-dark shadow d-inline-flex" height="50px"
+                    src="Img/perfil-vacio.webp" alt="">
                 <h4 class="d-lg-none d-inline-flex ml-3">Nombre Apellido</h4>
             </a>
             <div class="d-none d-lg-flex col-lg-4 my-auto">
@@ -35,7 +37,8 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom bg-tercero">
         <div class="col-lg-12 d-inline-flex">
-            <button class="d-inline-flex d-lg-none btn btn-primary h-50 my-auto" id="menu-toggle"> <i class=" p-1 fas fa-lg fa-bars"></i></button>
+            <button class="d-inline-flex d-lg-none btn btn-primary h-50 my-auto" id="menu-toggle"> <i
+                    class=" p-1 fas fa-lg fa-bars"></i></button>
             <h3 class="font-weight-bold text-white col-4 mt-2 d-none d-sm-flex"> Personal Médico </h3>
             <h4 class="font-weight-bold text-white col-4 mt-2 d-flex d-sm-none"> Personal Médico </h4>
         </div>
@@ -62,35 +65,94 @@
         <!-- Page Content -->
         <div id="page-content-wrapper">
             <div class="container-fluid">
-                <div class="row m-4">
-                    <div class="col-lg-6">
-                        <h3 class="font-weight-bold d-none d-sm-flex"> Información General </h3>
-                        <h4 class="font-weight-bold d-flex d-sm-none"> Información General </h4>
-                        <table class="table table-bordered mt-4">
-                            <tbody>
-                                <tr>
-                                    <th scope="row">Nombre Completo</th>
-                                    <td>Alexander Gómez</td>
-                                </tr>
+                <div class="row m-2">
+                    <div class="col-lg-12">
+                        <!-- cabecera 1 -->
+                        <div class="row border-bottom">
+                            <h3 class="font-weight-bold d-none d-sm-flex "> Información General </h3>
+                            <h4 class="font-weight-bold d-flex d-sm-none "> Información General </h4>
+                        </div>
+                        <!-- Informacion General -->
+                        <div class="accordion-item__container mt-4 ">
+                            <table class="table" style="font-size: 15px">
+                                <tbody>
 
-                                <tr>
-                                    <th scope="row">Lugar de trabajo</th>
-                                    <td>Hospital Aquiles Matto </td>
-                                </tr>
+                                    <tr>
+                                        <td class="text-center">
+                                            <i class="fa fa-user"></i>
+                                        </td>
+                                        <td>
+                                            <strong>NOMBRES</strong>
+                                        </td>
+                                        <td>
+                                            <span>Alexander</span>
+                                        </td>
+                                    </tr>
 
-                                <tr>
-                                    <th scope="row">Cargo</th>
-                                    <td>Enfermero</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                                    <tr>
+                                        <td class="text-center">
+                                            <i class="fa fa-user"></i>
+                                        </td>
+                                        <td>
+                                            <strong>APELLIDOS</strong>
+                                        </td>
+                                        <td>
+                                            <span>Espinoza Robles</span>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="text-center">
+                                            <i class="fa fa-credit-card"></i>
+                                        </td>
+                                        <td>
+                                            <strong>DNI</strong>
+                                        </td>
+                                        <td>
+                                            <span>74930500</span>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="text-center">
+                                            <i class="fa fa-credit-card"></i>
+                                        </td>
+                                        <td>
+                                            <strong>NÚMERO DE COLEGIATURA</strong>
+                                        </td>
+                                        <td>
+                                            <span>FM-1023839</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">
+                                            <i class="fas fa-phone"></i>
+                                        </td>
+                                        <td>
+                                            <strong>TELÉFONO</strong>
+                                        </td>
+                                        <td>
+                                            <span>7483839</span>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
 
                         <div class="row">
-                            <div class="col">
-                                <h3 class="font-weight-bold d-none d-sm-flex"> Turnos </h3>
-                                <h4 class="font-weight-bold d-flex d-sm-none"> Turnos </h4>
-                                <section style="overflow-y: scroll; height:300px;">
-                                    <button class="btn btn-light card d-inline-flex m-2 " style="width: 16rem;" data-toggle="collapse" href="#fecha" role="button" aria-expanded="false" aria-controls="fecha">
+                            <div class="col-6 text-center">
+                                <!-- cabecera 2-->
+                                <div class="row mt-4 border-bottom">
+                                    <h3 class="font-weight-bold d-none d-sm-flex "> Turnos Asignados </h3>
+                                    <h4 class="font-weight-bold d-flex d-sm-none "> Turnos Asignados </h4>
+                                </div>
+                                <!-- Turnos Asignados-->
+                                <section style="overflow-y: scroll; height:369px;">
+                                    <button class="btn btn-light card d-inline-flex m-2 " style="width: 16rem;"
+                                        data-toggle="collapse" href="#fecha" role="button" aria-expanded="false"
+                                        aria-controls="fecha">
                                         <div class="card-body">
                                             <h3>Lunes 12 de Enero</h3>
                                         </div>
@@ -103,12 +165,12 @@
                                     </button>
                                     <button class="btn btn-light card d-inline-flex m-2" style="width: 16rem;">
                                         <div class="card-body">
-                                            <h3>Martes 13 de Enero</h3>
+                                            <h3>Miercoles 14 de Enero</h3>
                                         </div>
                                     </button>
                                     <button class="btn btn-light card d-inline-flex m-2" style="width: 16rem;">
                                         <div class="card-body">
-                                            <h3>Martes 13 de Enero</h3>
+                                            <h3>Jueves 15 de Enero</h3>
                                         </div>
                                     </button>
                                     <button class="btn btn-light card d-inline-flex m-2" style="width: 16rem;">
@@ -124,34 +186,105 @@
 
                                 </section>
                             </div>
+
+                            <div class="col-6">
+                                <!-- cabecera 3-->
+                                <div class="row mt-4 border-bottom">
+                                    <h3 class="font-weight-bold d-none d-sm-flex "> Turno Detallado </h3>
+                                    <h4 class="font-weight-bold d-flex d-sm-none "> Turnos Detallado </h4>
+                                </div>
+
+                                <!-- Turno Detallado -->
+                                <div class="accordion-item__container mt-4 ">
+                                    <table class="table" style="font-size: 15px">
+                                        <tbody>
+
+                                            <tr>
+                                                <td class="text-center">
+                                                    <i class="fa fa-clock"></i>
+                                                </td>
+                                                <td>
+                                                    <strong>HORARIO</strong>
+                                                </td>
+                                                <td>
+                                                    <span>8:00-12:00</span>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="text-center">
+                                                    <i class="fa fa-hospital"></i>
+                                                </td>
+                                                <td>
+                                                    <strong>LUGAR DE TRABAJO</strong>
+                                                </td>
+                                                <td>
+                                                    HOSPITAL AQUILES MATO
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="text-center">
+                                                    <i class="fa fa-map-marker"></i>
+                                                </td>
+                                                <td>
+                                                    <strong>DEPARTAMENTO</strong>
+                                                </td>
+                                                <td>
+                                                    LIMA
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="text-center">
+                                                    <i class="fa fa-map-marker"></i>
+                                                </td>
+                                                <td>
+                                                    <strong>PROVINCIA</strong>
+                                                </td>
+                                                <td>
+                                                    LIMA
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="text-center">
+                                                    <i class="fa fa-map-marker"></i>
+                                                </td>
+                                                <td>
+                                                    <strong>DISTRITO</strong>
+                                                </td>
+                                                <td>
+                                                    COMAS
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="text-center">
+                                                    <i class="fa fa-question"></i>
+                                                </td>
+                                                <td>
+                                                    <strong>ESTADO</strong>
+                                                </td>
+                                                <td class="text-warning">
+                                                    PENDIENTE
+                                                </td>
+                                                <!--<td class="text-success">
+                                                    Asistió
+                                                </td>
+                                                <td class="text-danger">
+                                                    No Asistió
+                                                </td>-->
+                                            </tr>
+
+                                        </tbody>        
+                                    </table>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-6 text-center my-auto
-                    ">
-                        <h3 class="font-weight-bold d-none d-sm-block"> Turno Detallado </h3>
-                        <h4 class="font-weight-bold d-block d-sm-none"> Turno Detallado </h4>
-                        <table class="table table-bordered my-auto">
-                            <tbody>
-                                <tr>
-                                    <th scope="row">Hora</th>
-                                    <td>8:00 am - 12:00 pm</td>
-                                </tr>
 
-                                <tr>
-                                    <th scope="row">Lugar</th>
-                                    <td>Hospital Aquiles Matto </td>
-                                </tr>
-
-                                <tr>
-                                    <th scope="row">Asistio</th>
-                                    <td class="text-warning">Pendiente</td>
-                                    <!--<td class="text-success">Asistió</td>
-                                    <td class="text-danger">No Asistió</td>-->
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
                 </div>
             </div>
         </div>
@@ -170,7 +303,7 @@
     <script src="js/bootstrap.min.js "></script>
     <script src="js/popper.min.js "></script>
     <script>
-        $("#menu-toggle").click(function(e) {
+        $("#menu-toggle").click(function (e) {
             e.preventDefault();
             $("#wrapper").toggleClass("toggled");
         });
