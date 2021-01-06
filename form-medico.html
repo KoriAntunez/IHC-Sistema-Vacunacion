@@ -151,7 +151,7 @@
                                    <p>Fecha de emisión: </p>
                             </div>
                             <div class="row">
-                                <input type="text" class="form-control form-control-lg" placeholder="dd/mm/aaaa"
+                                <input type="date" class="form-control form-control-lg" placeholder="dd/mm/aaaa"
                                 aria-describedby="inputGroupPrepend1"required>
                             </div>
                         </div>                    
@@ -170,10 +170,10 @@
                         </div>
                         <div class="col-5 mr-2">
                             <div class="row">
-                                   <p>Número colegiatura: </p>
+                                   <p>Número de carnet militar: </p>
                             </div>
                             <div class="row">
-                                <input type="text" class="form-control form-control-lg" placeholder="Número colegiatura"
+                                <input type="text" class="form-control form-control-lg" placeholder="Código de colegiatura"
                                 aria-describedby="inputGroupPrepend1"required>
                             </div>
                         </div>                        
@@ -183,38 +183,47 @@
                 <div class="col-12 mt-5 mb-4">
                     <!-- cabecera -->
                     <div class="row mt-4 border-bottom">
-                        <h3 class="font-weight-bold d-none d-sm-flex "> Asignación de Turno a Personal Médico </h3>
-                        <h4 class="font-weight-bold d-flex d-sm-none "> Asignación de Turno a Personal Médico </h4>
+                        <h3 class="font-weight-bold d-none d-sm-flex "> Asignación de Turno a Militar</h3>
+                        <h4 class="font-weight-bold d-flex d-sm-none "> Asignación de Turno a Militar </h4>
                     </div>
                     <!-- Formulario -->                    
                     <!-- Fila 1 -->
                     <div class="row mt-4">
                         <div class="col-3 mr-2">
                             <div class="row">
-                                   <p>Departamento: </p>
-                            </div>
-                            <div class="row">
-                                <input type="text" class="form-control form-control-lg" placeholder="Departamneto"
-                                aria-describedby="inputGroupPrepend1"required>
-                            </div>
+                                <p>Departamento: </p>
+                         </div>
+                             <select name="my_html_select_box" class="form-control form-control-lg">
+
+                                 <option selected="yes">Lima </option>
+                                 <option >Ancash</option>
+                                 <option>La Libertad</option>
+                             
+                             </select>           
                         </div>
                         <div class="col-3 mr-2">
                             <div class="row">
                                    <p>Provincia: </p>
                             </div>
-                            <div class="row">
-                                <input type="text" class="form-control form-control-lg" placeholder="Provincia"
-                                aria-describedby="inputGroupPrepend1"required>
-                            </div>
+                                <select name="my_html_select_box" class="form-control form-control-lg">
+
+                                    <option selected="yes">Lima </option>
+                                    <option >Huaraz</option>
+                                    <option>Trujillo</option>
+                                
+                                </select>                            
                         </div>
                         <div class="col-4">
                             <div class="row">
-                                   <p>Distrito: </p>
-                            </div>
-                            <div class="row">
-                                <input type="text" class="form-control form-control-lg" placeholder="Distrito"
-                                aria-describedby="inputGroupPrepend1"required>  
-                            </div>
+                                <p>Distrito: </p>
+                         </div>
+                            <select name="my_html_select_box" class="form-control form-control-lg">
+
+                                <option selected="yes">Jesus María </option>
+                                <option >Lince</option>
+                                <option>Puente Piedra</option>
+                            
+                            </select> 
                         </div>
                     
                     </div>
@@ -255,10 +264,13 @@
                             <div class="row">
                                    <p>Turno: </p>
                             </div>
-                            <div class="row">
-                                <input type="text" class="form-control form-control-lg" placeholder="Turno"
-                                aria-describedby="inputGroupPrepend1"required>
-                            </div>
+                            <select name="my_html_select_box" class="form-control form-control-lg">
+
+                                <option selected="yes">Turno 1</option>
+                                <option >Turno 2</option>
+                                <option>Turno 3</option>
+                            
+                            </select>
                         </div>
                     </div>                    
                 </div>
