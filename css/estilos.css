@@ -18,6 +18,10 @@ SOBREESCRIBIENDO  LOS ESTILOS DE BOOTSTRAP
   color: gray;
 }
 
+.text-table {
+  font-size: 18px;
+}
+
 .btn-primary {
   background-color: #8B2B16 !important;
   border-color: #5f1d0f !important;

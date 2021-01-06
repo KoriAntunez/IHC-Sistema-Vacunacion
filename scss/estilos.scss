@@ -24,6 +24,9 @@ SOBREESCRIBIENDO  LOS ESTILOS DE BOOTSTRAP
     color:$tercero
 }
 
+.text-table{
+    font-size: 18px;
+}
 .btn-primary {
     background-color: $principal !important;
     border-color: darken($principal, 10%) !important;
