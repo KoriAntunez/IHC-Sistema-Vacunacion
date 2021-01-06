@@ -20,6 +20,10 @@ SOBREESCRIBIENDO  LOS ESTILOS DE BOOTSTRAP
     color: $principal !important;
 }
 
+.text-secundario{
+    color:$tercero
+}
+
 .btn-primary {
     background-color: $principal !important;
     border-color: darken($principal, 10%) !important;

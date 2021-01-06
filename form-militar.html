@@ -40,8 +40,8 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom bg-tercero">
         <div class="col-lg-12 d-inline-flex">
             <button class="d-inline-flex d-lg-none btn btn-primary h-50 my-auto" id="menu-toggle"> <i class=" p-1 fas fa-lg fa-bars"></i></button>
-            <h3 class="font-weight-bold text-white col-4 mt-2 d-none d-sm-flex"> Personal Médico </h3>
-            <h4 class="font-weight-bold text-white col-4 mt-2 d-flex d-sm-none"> Personal Médico </h4>
+            <h3 class="font-weight-bold text-white col-4 mt-2 d-none d-sm-flex"> Militar</h3>
+            <h4 class="font-weight-bold text-white col-4 mt-2 d-flex d-sm-none"> Militar</h4>
         </div>
     </nav>
 
@@ -49,16 +49,46 @@
 
         <!-- Sidebar -->
         <div class="bg-light border-right" id="sidebar-wrapper">
-            <div class="sidebar-heading h4">MENÚ DE OPCIONES</div>
+            <div class="sidebar-heading h4 text-secundario">MENÚ DE OPCIONES</div>
             <div class="list-group list-group-flush d-inline-flex align-items-center">
+                
+                <!-- Informacion Personal y Turnos -->    
+                <a href="#" class="list-group-item list-group-item-action bg-light">
+                    <div class="row">
+                    <div class="col-2"><i class="fas fa-user"></i></div>
+                    <div class="col-10">Información Personal y Turnos</div>
+                    </div>
+                </a>
+                    
+                <!-- Consultar fecha de vacunacion -->    
+                <a href="#" class="list-group-item list-group-item-action bg-light">
+                    <div class="row">
+                    <div class="col-2"><i class="fas fa-question"></i></div>
+                    <div class="col-10">Consultar fecha de Vacunación</div>
+                    </div>
+                </a>
+                <!-- Consultar fecha de vacunacion -->
+                <a href="#" class="list-group-item list-group-item-action bg-light">
+                    <div class="row">
+                    <div class="col-2"><i class="fas fa-file-signature"></i></div>
+                    <div class="col-10">Solicitar cambio de turno</div>
+                    </div>
+                </a>
+
+                <!-- Registrar Personal de vacunación -->
                 <a href="#" class="list-group-item list-group-item-action bg-light disabled font-weight-bolder">
-                    <i class="fas fa-user"></i> Información Personal y Turnos</a>
+                    <div class="row">
+                    <div class="col-2"><i class="fas fa-user-plus"></i></div>
+                    <div class="col-10">Registrar personal de vacunación</div>
+                    </div>
+                </a>
+                <!-- Salir -->
                 <a href="#" class="list-group-item list-group-item-action bg-light">
-                    <i class="fas fa-question"></i> Consultar fecha de Vacunación</a>
-                <a href="#" class="list-group-item list-group-item-action bg-light">
-                    <i class="fas fa-file-signature"></i> Solicitar cambio de turno</a>
-                <a href="seleccion_Usuario.html" class="list-group-item list-group-item-action bg-light">
-                    <i class="fas fa-sign-out-alt"></i> Salir</a>
+                    <div class="row">
+                    <div class="col-2"><i class="fas fa-sign-out-alt"></i></div>
+                    <div class="col-10">Salir</div>
+                    </div>
+                </a>
             </div>
         </div>
         <!-- /#sidebar-wrapper -->
@@ -69,8 +99,8 @@
                 <div class="col-12  ">
                     <!-- cabecera -->
                     <div class="row mt-4 border-bottom">
-                        <h3 class="font-weight-bold d-none d-sm-flex "> Registro de Personal Médico </h3>
-                        <h4 class="font-weight-bold d-flex d-sm-none "> Registro de Personal Médico </h4>
+                        <h3 class="font-weight-bold d-none d-sm-flex "> Registro de Militar </h3>
+                        <h4 class="font-weight-bold d-flex d-sm-none "> Registro de Militar </h4>
                     </div>
                     <!-- Formulario -->
                     <!-- Fila 1 -->
@@ -131,10 +161,10 @@
                     <div class="row mt-4">
                         <div class="col-10">
                             <div class="row">
-                                   <p>Direccion: </p>
+                                   <p>Dirección: </p>
                             </div>
                             <div class="row">
-                                <input type="text" class="form-control form-control-lg" placeholder="Calle, Jiron o Avenida"
+                                <input type="text" class="form-control form-control-lg" placeholder="Calle, Jirón o Avenida"
                                 aria-describedby="inputGroupPrepend1"required>
                             </div>
                         </div>
@@ -144,19 +174,19 @@
                     <div class="row mt-4">
                         <div class="col-4 mr-2">
                             <div class="row">
-                                   <p>Número colegiatura: </p>
+                                   <p>Carnet militar: </p>
                             </div>
                             <div class="row">
-                                <input type="text" class="form-control form-control-lg" placeholder="Número colegiatura"
+                                <input type="text" class="form-control form-control-lg" placeholder="Número de carnet militar"
                                 aria-describedby="inputGroupPrepend1"required>
                             </div>
                         </div>
                         <div class="col-6 ">
                             <div class="row">
-                                   <p>Cargo: </p>
+                                   <p>Rango: </p>
                             </div>
                             <div class="row">
-                                <input type="text" class="form-control form-control-lg" placeholder="Cargo"
+                                <input type="text" class="form-control form-control-lg" placeholder="Rango"
                                 aria-describedby="inputGroupPrepend1"required>
                             </div>
                         </div>
@@ -166,8 +196,8 @@
                 <div class="col-12 mb-4">
                     <!-- cabecera -->
                     <div class="row mt-4 border-bottom">
-                        <h3 class="font-weight-bold d-none d-sm-flex "> Asignación de Turno a Personal Médico </h3>
-                        <h4 class="font-weight-bold d-flex d-sm-none "> Asignación de Turno a Personal Médico </h4>
+                        <h3 class="font-weight-bold d-none d-sm-flex "> Asignación de Turno a Militar </h3>
+                        <h4 class="font-weight-bold d-flex d-sm-none "> Asignación de Turno a Militar </h4>
                     </div>
                     <!-- Formulario -->
                     <!-- Fila 1 -->
@@ -228,10 +258,10 @@
                     <div class="row mt-4">
                         <div class="col-10">
                             <div class="row">
-                                   <p>Direccion: </p>
+                                   <p>Dirección: </p>
                             </div>
                             <div class="row">
-                                <input type="text" class="form-control form-control-lg" placeholder="Calle, Jiron o Avenida"
+                                <input type="text" class="form-control form-control-lg" placeholder="Calle, Jirón o Avenida"
                                 aria-describedby="inputGroupPrepend1"required>
                             </div>
                         </div>
@@ -244,13 +274,13 @@
                                    <p>Pabellón: </p>
                             </div>
                             <div class="row">
-                                <input type="text" class="form-control form-control-lg" placeholder="Pabellón C"
+                                <input type="text" class="form-control form-control-lg" placeholder="Pabellón"
                                 aria-describedby="inputGroupPrepend1"required>
                             </div>
                         </div>
                         <div class="col-6 ">
                             <div class="row">
-                                   <p>Codigo Institución: </p>
+                                   <p>Código Institución: </p>
                             </div>
                             <div class="row">
                                 <input type="text" class="form-control form-control-lg" placeholder="código institución"

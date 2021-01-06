@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!--Meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--TITULO DE PÁGINA-->
+    <link rel="shortcut icon" href="Img/Escudo.png" type="image/x-icon">
+    <title>Sistema de Vacunación COVID 19</title>
+
+    <!--ARCHIVOS CSS BOOTSTRAP 4-->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!--ARCHIVO CSS PERSONALIZADOS-->
+    <link type="text/css" rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <!-- Encabezado 1 -->
+    <nav class=" navbar navbar-dark navbar-expand-sm text-light bg-primary">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <img class="d-none figure-img rounded-circle border-dark shadow d-lg-inline-flex " height="75px" src="Img/perfil-vacio.webp" alt="">
+                <h3 class="d-none d-lg-inline-flex ml-3">Nombre Apellido</h3>
+
+                <img class="d-lg-none figure-img rounded-circle border-dark shadow d-inline-flex" height="50px" src="Img/perfil-vacio.webp" alt="">
+                <h4 class="d-lg-none d-inline-flex ml-3">Nombre Apellido</h4>
+            </a>
+            <div class="d-none d-lg-flex col-lg-4 my-auto">
+                <a href="https://www.gob.pe/minsa/">
+                    <img class="img-fluid rounded border" src="Img/MINSA-LOGO.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Encabezado 2 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom bg-tercero">
+        <div class="col-lg-12 d-inline-flex">
+            <button class="d-inline-flex d-lg-none btn btn-primary h-50 my-auto" id="menu-toggle"> <i class=" p-1 fas fa-lg fa-bars"></i></button>
+            <h3 class="font-weight-bold text-white col-4 mt-2 d-none d-sm-flex"> Personal Médico </h3>
+            <h4 class="font-weight-bold text-white col-4 mt-2 d-flex d-sm-none"> Personal Médico </h4>
+        </div>
+    </nav>
+
+    <div class="d-flex" id="wrapper" class="toggled">
+
+        <!-- Sidebar -->
+        <div class="bg-light border-right" id="sidebar-wrapper">
+            <div class="sidebar-heading h4 text-secundario">MENÚ DE OPCIONES</div>
+            <div class="list-group list-group-flush d-inline-flex align-items-center">
+                
+                <!-- Informacion Personal y Turnos -->    
+                <a href="#" class="list-group-item list-group-item-action bg-light">
+                    <div class="row">
+                    <div class="col-2"><i class="fas fa-user"></i></div>
+                    <div class="col-10">Información Personal y Turnos</div>
+                    </div>
+                </a>
+                    
+                <!-- Consultar fecha de vacunacion -->    
+                <a href="#" class="list-group-item list-group-item-action bg-light">
+                    <div class="row">
+                    <div class="col-2"><i class="fas fa-question"></i></div>
+                    <div class="col-10">Consultar fecha de Vacunación</div>
+                    </div>
+                </a>
+                <!-- Consultar fecha de vacunacion -->
+                <a href="#" class="list-group-item list-group-item-action bg-light">
+                    <div class="row">
+                    <div class="col-2"><i class="fas fa-file-signature"></i></div>
+                    <div class="col-10">Solicitar cambio de turno</div>
+                    </div>
+                </a>
+
+                <!-- Registrar Personal de vacunación -->
+                <a href="#" class="list-group-item list-group-item-action bg-light disabled font-weight-bolder">
+                    <div class="row">
+                    <div class="col-2"><i class="fas fa-user-plus"></i></div>
+                    <div class="col-10">Registrar personal de vacunación</div>
+                    </div>
+                </a>
+                <!-- Salir -->
+                <a href="#" class="list-group-item list-group-item-action bg-light">
+                    <div class="row">
+                    <div class="col-2"><i class="fas fa-sign-out-alt"></i></div>
+                    <div class="col-10">Salir</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container ">
+                <div class="col-12  ">
+                    <!-- cabecera -->
+                    <div class="row mt-4 border-bottom">
+                        <h3 class="font-weight-bold d-none d-sm-flex "> Registro de Personal Médico </h3>
+                        <h4 class="font-weight-bold d-flex d-sm-none "> Registro de Personal Médico </h4>
+                    </div>
+                    <!-- Formulario -->
+                    <!-- Fila 1 -->
+                    <div class="row mt-4">
+
+                            <div class="col-6 mr-2">
+                                <div class="row">
+                                       <p>Nombre completo: </p>
+                                </div>
+                                <div class="row">
+                                    <input type="text" class="form-control form-control-lg" placeholder="Nombre y Apellidos"
+                                    aria-describedby="inputGroupPrepend1"required>
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="row">
+                                       <p>DNI: </p>
+                                </div>
+                                <div class="row">
+                                    <input type="text" class="form-control form-control-lg" placeholder="Número DNI"
+                                    aria-describedby="inputGroupPrepend1"required>
+                                </div>
+                            </div>
+                    </div>
+                    <!-- Fila 2 -->
+                    <div class="row mt-4">
+                        <div class="col-3 mr-2">
+                            <div class="row">
+                                   <p>Departamento: </p>
+                            </div>
+                            <div class="row">
+                                <input type="text" class="form-control form-control-lg" placeholder="Departamneto"
+                                aria-describedby="inputGroupPrepend1"required>
+                            </div>
+                        </div>
+                        <div class="col-3 mr-2">
+                            <div class="row">
+                                   <p>Provincia: </p>
+                            </div>
+                            <div class="row">
+                                <input type="text" class="form-control form-control-lg" placeholder="Provincia"
+                                aria-describedby="inputGroupPrepend1"required>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="row">
+                                   <p>Distrito: </p>
+                            </div>
+                            <div class="row">
+                                <input type="text" class="form-control form-control-lg" placeholder="Distrito"
+                                aria-describedby="inputGroupPrepend1"required>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <!-- Fila 3 -->
+                    <div class="row mt-4">
+                        <div class="col-10">
+                            <div class="row">
+                                   <p>Dirección: </p>
+                            </div>
+                            <div class="row">
+                                <input type="text" class="form-control form-control-lg" placeholder="Calle, Jiron o Avenida"
+                                aria-describedby="inputGroupPrepend1"required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fila 4 -->
+                    <div class="row mt-4">
+                        <div class="col-4 mr-2">
+                            <div class="row">
+                                   <p>Número colegiatura: </p>
+                            </div>
+                            <div class="row">
+                                <input type="text" class="form-control form-control-lg" placeholder="Número colegiatura"
+                                aria-describedby="inputGroupPrepend1"required>
+                            </div>
+                        </div>
+                        <div class="col-6 ">
+                            <div class="row">
+                                   <p>Cargo: </p>
+                            </div>
+                            <div class="row">
+                                <input type="text" class="form-control form-control-lg" placeholder="Cargo"
+                                aria-describedby="inputGroupPrepend1"required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 mb-4">
+                    <!-- cabecera -->
+                    <div class="row mt-4 border-bottom">
+                        <h3 class="font-weight-bold d-none d-sm-flex "> Asignación de Turno a Personal Médico </h3>
+                        <h4 class="font-weight-bold d-flex d-sm-none "> Asignación de Turno a Personal Médico </h4>
+                    </div>
+                    <!-- Formulario -->
+                    <!-- Fila 1 -->
+                    <div class="row mt-4">
+
+                            <div class="col-6 mr-2">
+                                <div class="row">
+                                       <p>Fecha: </p>
+                                </div>
+                                <div class="row">
+                                    <input type="text" class="form-control form-control-lg" placeholder="dd/mm/aaaa"
+                                    aria-describedby="inputGroupPrepend1"required>
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="row">
+                                       <p>Turno: </p>
+                                </div>
+                                <div class="row">
+                                    <input type="text" class="form-control form-control-lg" placeholder="Número de Turno"
+                                    aria-describedby="inputGroupPrepend1"required>
+                                </div>
+                            </div>
+                    </div>
+                    <!-- Fila 2 -->
+                    <div class="row mt-4">
+                        <div class="col-3 mr-2">
+                            <div class="row">
+                                   <p>Departamento: </p>
+                            </div>
+                            <div class="row">
+                                <input type="text" class="form-control form-control-lg" placeholder="Departamneto"
+                                aria-describedby="inputGroupPrepend1"required>
+                            </div>
+                        </div>
+                        <div class="col-3 mr-2">
+                            <div class="row">
+                                   <p>Provincia: </p>
+                            </div>
+                            <div class="row">
+                                <input type="text" class="form-control form-control-lg" placeholder="Provincia"
+                                aria-describedby="inputGroupPrepend1"required>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="row">
+                                   <p>Distrito: </p>
+                            </div>
+                            <div class="row">
+                                <input type="text" class="form-control form-control-lg" placeholder="Distrito"
+                                aria-describedby="inputGroupPrepend1"required>  
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <!-- Fila 3 -->
+                    <div class="row mt-4">
+                        <div class="col-10">
+                            <div class="row">
+                                   <p>Dirección: </p>
+                            </div>
+                            <div class="row">
+                                <input type="text" class="form-control form-control-lg" placeholder="Calle, Jirón o Avenida"
+                                aria-describedby="inputGroupPrepend1"required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fila 4 -->
+                    <div class="row mt-4">
+                        <div class="col-4 mr-2">
+                            <div class="row">
+                                   <p>Pabellón: </p>
+                            </div>
+                            <div class="row">
+                                <input type="text" class="form-control form-control-lg" placeholder="Pabellón "
+                                aria-describedby="inputGroupPrepend1"required>
+                            </div>
+                        </div>
+                        <div class="col-6 ">
+                            <div class="row">
+                                   <p>Código de Institución: </p>
+                            </div>
+                            <div class="row">
+                                <input type="text" class="form-control form-control-lg" placeholder="código institución"
+                                aria-describedby="inputGroupPrepend1"required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            </div>
+        </div>
+    <!-- botones -->
+        <div class="form-row mb-4 text-center justify-content-center rounded">
+            <div class="form-group">
+                <a href="#" class="btn btn-lg btn-primary">
+                    <i class="fas fa-edit"></i> Registrar</i> </a>
+
+                <a href="PanelPM.html" class="btn btn-lg btn-secondary">
+                    <i class="fas fa-window-close"></i> Cancelar </a>
+               
+            </div>
+        </div>
+
+    <!-- /#page-content-wrapper -->
+    <footer class="mt-auto bg-dark text-light text-center">
+        <p> IHC-Grupo 4 Copyright © 2021 Todos los derechos reservados</p>
+    </footer>
+
+    <!-- iconos-->
+    <script src="https://kit.fontawesome.com/160f79963e.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.5.1.min.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/popper.min.js "></script>
+    <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+</body>
+
+</html>
