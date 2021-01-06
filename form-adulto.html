@@ -51,30 +51,81 @@
     <section class="container">
         <div class="row">
             <form class="col-lg-8">
-                <h2>Complete el siguiente formulario: <br></h2>
-                <div class="form-row text-center justify-content-center rounded bg-form"><label>¿Desea recibir la vacuna
-                        contra el COVID-19?<br>
-                        <div class="form-group"><button class="btn btn-secondary" type="button">Si</button><button
-                                class="btn btn-secondary" type="button">No</button></div>
-                    </label></div>
-                <div class="form-row mt-3 text-center justify-content-center rounded bg-form"><label>¿Ud. presenta
-                        alguna discapacidad?<br>
-                        <div class="form-group">
-                            <div class="form-check-inline"><label class="form-check-label"><input
-                                        class="form-check-input" type="checkbox" value="">Psicomotora</label></div>
-                <div class="form-check-inline"><label class="form-check-label"><input
-                                        class="form-check-input" type="checkbox" value="">Sordera</label></div>
-                <div class="form-check-inline"><label class="form-check-label"><input
-                                        class="form-check-input" type="checkbox" value="">Visual</label></div>
-                <div class="form-check-inline" style="font-size:smaller;">Otros: <input class="form-control form-control-sm" type="text" placeholder="Especifique" name="text1"></div>
-        </div>
-        </label>
-        </div>
-        <div class="form-row mt-3 text-center justify-content-center rounded bg-form"><label>¿Necesita la ayuda
-                        de un acompañante?<br>
-                        <div class="form-group"><button class="btn btn-secondary" type="button">Si</button><button
-                                class="btn btn-secondary" type="button">No</button></div>
-                    </label></div>
+                <h3>Conteste las siguientes preguntas <br></h3>
+
+                <div class="form-row ">
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-header">
+                                <label class="card-title">1. ¿Usted presenta alguna de las siguientes discapacidad?
+                                </label>
+                            </div>
+                            <div class="card-body ">
+
+                                <div class="form-group row mx-auto">
+                                    <div class="col-12">
+                                        <fieldset class="form-group row center-block">
+                                            <div class="col-12">
+                                                <div class="form-check">
+
+                                                    <div class="form-check-label ">
+                                                        <label class="form-check-label"><input id="psicomotora"
+                                                                class="form-check-input" type="checkbox" value="">
+                                                            Psicomotora</label>
+                                                    </div>
+
+                                                    <div class="form-check-label mt-2">
+                                                        <label class="form-check-label"><input id="sordera"
+                                                                class="form-check-input" type="checkbox" value="">
+                                                            Sordera</label>
+                                                    </div>
+
+                                                    <div class="form-check-label mt-2">
+                                                        <div class="form-check-label"><label
+                                                                class="form-check-label"><input id="visual"
+                                                                    class="form-check-input" type="checkbox"
+                                                                    value="">Visual</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-check-label mt-2 mr-2">
+                                                        <div class="form-check-input d-inline-flex">
+                                                            <p>Otros: <input class="form-control form-control-sm "
+                                                                    type="text" placeholder="Especifique"
+                                                                    id="otra-discapacidad"></p>
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </fieldset>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row mt-3">
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-header">
+                                <label class="card-title">2. Durante el día de la vacunación. ¿Necesitará la ayuda de un
+                                    acompañante?</label>
+                            </div>
+                            <div class="card-body text-center">
+                                <button class="btn btn-secondary" type="button">Si</button>
+                                <button class="btn btn-secondary" type="button">No</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="form-row mt-3 text-center justify-content-center rounded">
                     <div class="form-group">
                         <a href="ReporteAM.html" class="btn btn-lg btn-primary">
@@ -82,7 +133,7 @@
 
                         <a href="login_Adulto_Mayor.html" class="btn btn-lg btn-secondary">
                             <i class="fas fa-window-close"></i> Cancelar </a>
-                       
+
                     </div>
                 </div>
             </form><!-- Sección de MINSA y Anuncio-->
