@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!--Meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--TITULO DE PÁGINA-->
+    <link rel="shortcut icon" href="Img/Escudo.png" type="image/x-icon">
+    <title>Sistema de Vacunación COVID 19</title>
+
+    <!--ARCHIVOS CSS BOOTSTRAP 4-->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!--ARCHIVO CSS PERSONALIZADOS-->
+    <link type="text/css" rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <!--Encabezado 1-->
+    <nav class=" navbar navbar-dark navbar-expand-sm text-light bg-primary ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 text-left ">
+                    <h1 class="font-weight-bold display-4 d-none d-sm-flex">Sistema de Vacunación <br
+                            class="d-none d-lg-inline "> COVID 19</h1>
+                    <h2 class="font-weight-bold d-flex d-sm-none">Sistema de Vacunación <br class="d-none d-lg-inline ">
+                        COVID 19</h2>
+                </div>
+                <div class="d-none d-lg-flex col-lg-4 my-auto">
+                    <a href="https://www.gob.pe/minsa/">
+                        <img class="img-fluid rounded border" src="Img/MINSA-LOGO.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--Encabezado 2-->
+    <nav class=" navbar navbar-dark navbar-expand-sm text-light bg-tercero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-left">
+                    <h3 class="font-weight-bold display 4 d-none d-sm-flex">Administrador </h3>
+                    <h4 class="font-weight-bold display 4 d-flex d-sm-none">Administrador </h4>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de Formulario de Login-->
+    <section class="container mt-3">
+        <div class="row mx-3">
+            <form class="col-lg-6 my-auto needs-validation" id="login-form" action="" method="POST" novalidate>
+                <h1 class="h2 d-none d-sm-flex mt-2 mb-4 ">Ingrese usuario y contraseña</h1>
+                <h3 class="d-flex d-sm-none mt-2 mb-4">Ingrese usuario y contraseña</h3>
+                <div class="form-row">
+                    <p>Usuario:</p>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-12">
+                        <input type="text" id="dni" pattern="[0-9][A-z][a-Z]" class="form-control form-control-lg"
+                            placeholder="Usuario" aria-describedby="inputGroupPrepend1" required>
+                        <small id="dniHelp" class="form-text text-muted">El número de Usuario debe contener
+                            caracteres y números</small>
+                        <div class="valid-feedback">¡Correcto!</div>
+                        <div id="dni-feedback" class="invalid-feedback">Proporcione un nombre de usuario válido</div>
+                    </div>
+
+                </div>
+                <div class="form-row mt-4">
+                    <p>contraseña:</p>
+                </div>
+
+                <div class="form-row">
+                    <div class="col">
+                            <input type="password" id=""  class="form-control form-control-lg"
+                                placeholder="Contraseña" aria-describedby="inputGroupPrepend4" required>
+                            <small id="dniHelp" class="form-text text-muted">Ingrese una contraseña valida
+                                 </small>
+                            <div class="valid-feedback">¡Correcto!</div>
+                            <div class="invalid-feedback">Proporcione una contraseña válida</div>       
+                    </div>
+                </div>
+
+                <div class="form-row text-center mb-3 justify-content-between align-items-center mt-1">
+                    <div class="col">
+                        <button class="btn btn-lg btn-primary ml-auto" type="submit"> <i class="fas fa-sign-in-alt"></i>
+                            Ingresar</button>
+                    </div>
+                    <div class="col">
+                        <a href="Seleccion_Personal.html" class="btn btn-lg btn-secondary ml-auto">
+                            <i class="fas fa-window-close"></i> Cancelar</a>
+                    </div>
+                </div>                
+            </form>
+
+
+            <!-- Sección de MINSA y Anuncio-->
+            <div class="col-lg-6 mt-3 ml-auto my-4">
+                <div class="mt-4 embed-responsive embed-responsive-16by9 mb-2">
+                    <iframe class="embed-responsive-item" height="auto" src="https://www.youtube.com/embed/W2Nmz9ViOFA"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+    <!-- Reserva de derechos-->
+    <footer class="mt-auto bg-dark text-light text-center">
+        <p> IHC-Grupo 4 Copyright © 2021 Todos los derechos reservados</p>
+    </footer>
+
+
+
+    <!--Validacion-->
+    <script>
+       
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+               
+                var forms = document.getElementsByClassName('needs-validation');
+                // Prevenir submit
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+
+                var inputs = document.getElementsByClassName('form-control')
+
+                 // Validación en tiempo real
+                var validation = Array.prototype.filter.call(inputs, function (input) {
+
+                    input.addEventListener('blur', function (event) {
+                        // reset
+                        input.classList.remove('is-invalid')
+                        input.classList.remove('is-valid')
+
+                        if (input.checkValidity() === false) {
+                            input.classList.add('is-invalid')
+                        }
+                        else {
+                            input.classList.add('is-valid')
+                        }
+                    }, false);
+                });
+
+            }, false);
+        })();
+    </script>
+    <script src="https://kit.fontawesome.com/160f79963e.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.5.1.min.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/popover.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
