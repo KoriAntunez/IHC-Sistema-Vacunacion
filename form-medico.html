@@ -22,10 +22,12 @@
     <nav class=" navbar navbar-dark navbar-expand-sm text-light bg-primary">
         <div class="container">
             <a href="#" class="navbar-brand">
-                <img class="d-none figure-img rounded-circle border-dark shadow d-lg-inline-flex " height="75px" src="Img/perfil-vacio.webp" alt="">
+                <img class="d-none figure-img rounded-circle border-dark shadow d-lg-inline-flex " height="75px"
+                    src="Img/perfil-vacio.webp" alt="">
                 <h3 class="d-none d-lg-inline-flex ml-3">Administrador</h3>
 
-                <img class="d-lg-none figure-img rounded-circle border-dark shadow d-inline-flex" height="50px" src="Img/perfil-vacio.webp" alt="">
+                <img class="d-lg-none figure-img rounded-circle border-dark shadow d-inline-flex" height="50px"
+                    src="Img/perfil-vacio.webp" alt="">
                 <h4 class="d-lg-none d-inline-flex ml-3">Administrador</h4>
             </a>
             <div class="d-none d-lg-flex col-lg-4 my-auto">
@@ -39,7 +41,8 @@
     <!-- Encabezado 2 -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom bg-tercero">
         <div class="col-lg-12 d-inline-flex">
-            <button class="d-inline-flex d-lg-none btn btn-primary h-50 my-auto" id="menu-toggle"> <i class=" p-1 fas fa-lg fa-bars"></i></button>
+            <button class="d-inline-flex d-lg-none btn btn-primary h-50 my-auto" id="menu-toggle"> <i
+                    class=" p-1 fas fa-lg fa-bars"></i></button>
             <h3 class="font-weight-bold text-white col-4 mt-2 d-none d-sm-flex"> Administrador</h3>
             <h4 class="font-weight-bold text-white col-4 mt-2 d-flex d-sm-none"> Administrador </h4>
         </div>
@@ -51,41 +54,76 @@
         <div class="bg-light border-right" id="sidebar-wrapper">
             <div class="sidebar-heading h4 text-secundario">MENÚ DE OPCIONES</div>
             <div class="list-group list-group-flush d-inline-flex align-items-center">
+
+                <!-- Informacion Personal y Turnos -->
+                <a href="#" class="list-group-item list-group-item-action bg-light">
+                    <div class="row">
+                        <div class="col-2"><i class="fas fa-user"></i></div>
+                        <div class="col-10">Información Personal y Turnos</div>
+                    </div>
+                </a>
+
+                <!-- Consultar fecha de vacunacion -->
+                <a href="#" class="list-group-item list-group-item-action bg-light">
+                    <div class="row">
+                        <div class="col-2"><i class="fas fa-question"></i></div>
+                        <div class="col-10">Consultar fecha de Vacunación</div>
+                    </div>
+                </a>
                 
-                <!-- Informacion Personal y Turnos -->    
-                <a href="#" class="list-group-item list-group-item-action bg-light">
-                    <div class="row">
-                    <div class="col-2"><i class="fas fa-user"></i></div>
-                    <div class="col-10">Información Personal y Turnos</div>
-                    </div>
-                </a>
-                    
-                <!-- Consultar fecha de vacunacion -->    
-                <a href="#" class="list-group-item list-group-item-action bg-light">
-                    <div class="row">
-                    <div class="col-2"><i class="fas fa-question"></i></div>
-                    <div class="col-10">Consultar fecha de Vacunación</div>
-                    </div>
-                </a>
                 <!-- Registrar Personal de vacunación -->
-                <a href="#" class="list-group-item list-group-item-action bg-light disabled font-weight-bolder">
+                <a href="#" class="list-group-item list-group-item-action bg-light navbar-toogle" data-toggle="collapse"
+                    data-target="#navbarToggleRegistrar" aria-controls="navbarToggleRegistrar" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <div class="row">
-                    <div class="col-2"><i class="fas fa-user-plus"></i></div>
-                    <div class="col-10">Registrar personal de vacunación</div>
+                        <div class="col-2"><i class="fas fa-user-plus"></i></div>
+                        <div class="col-10">Registrar personal de vacunación</div>
                     </div>
                 </a>
-                <!-- Asignar Personal de vacunacion-->
-                <a href="#" class="list-group-item list-group-item-action bg-light">
+                <!-- Registrar personal médico -->
+                <a href="#" class="list-group-item list-group-item-action bg-light collapse" id="navbarToggleRegistrar">
                     <div class="row">
-                    <div class="col-2"><i class="fas fa-edit"></i></div>
-                    <div class="col-10">Asignar personal de vacunación</div>
+                        <div class="col-2"><i class="fas fa-user-plus"></i></div>
+                        <div class="col-10">Registrar personal médico</div>
                     </div>
-                </a>                
+                </a>
+                <!-- Registrar personal médico -->
+                <a href="#" class="list-group-item list-group-item-action bg-light collapse" id="navbarToggleRegistrar">
+                    <div class="row">
+                        <div class="col-2"><i class="fas fa-user-plus"></i></div>
+                        <div class="col-10">Registrar personal militar</div>
+                    </div>
+                </a>
+
+
+                <!-- Asignar Personal de vacunacion-->
+                <a href="#" class="list-group-item list-group-item-action bg-light navbar-toogle" data-toggle="collapse"
+                    data-target="#navbarToggleAsignar" aria-controls="navbarToggleAsignar" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <div class="row">
+                        <div class="col-2"><i class="fas fa-edit"></i></div>
+                        <div class="col-10">Asignar personal de vacunación</div>
+                    </div>
+                </a>
+                <!-- Asignar personal médico -->
+                <a href="#" class="list-group-item list-group-item-action bg-light collapse" id="navbarToggleAsignar">
+                    <div class="row">
+                        <div class="col-2"><i class="fas fa-edit"></i></div>
+                        <div class="col-10">Asignar personal médico</div>
+                    </div>
+                </a>
+                <!-- Asignar personal militar -->
+                <a href="#" class="list-group-item list-group-item-action bg-light collapse" id="navbarToggleAsignar">
+                    <div class="row">
+                        <div class="col-2"><i class="fas fa-edit"></i></div>
+                        <div class="col-10">Asignar personal militar</div>
+                    </div>
+                </a>
                 <!-- Salir -->
                 <a href="#" class="list-group-item list-group-item-action bg-light">
                     <div class="row">
-                    <div class="col-2"><i class="fas fa-sign-out-alt"></i></div>
-                    <div class="col-10">Salir</div>
+                        <div class="col-2"><i class="fas fa-sign-out-alt"></i></div>
+                        <div class="col-10">Salir</div>
                     </div>
                 </a>
             </div>
@@ -105,77 +143,77 @@
                     <!-- Fila 1 -->
                     <div class="row mt-4">
 
-                            <div class="col-5 mr-2">
-                                <div class="row">
-                                       <p>Nombres:</p>
-                                </div>
-                                <div class="row">
-                                    <input type="text" class="form-control form-control-lg" placeholder="Nombres"
-                                    aria-describedby="inputGroupPrepend1"required>
-                                </div>
+                        <div class="col-5 mr-2">
+                            <div class="row">
+                                <p>Nombres:</p>
                             </div>
+                            <div class="row">
+                                <input type="text" class="form-control form-control-lg" placeholder="Nombres"
+                                    aria-describedby="inputGroupPrepend1" required>
+                            </div>
+                        </div>
 
-                            <div class="col-5">
-                                <div class="row">
-                                       <p>Apellidos: </p>
-                                </div>
-                                <div class="row">
-                                    <input type="text" class="form-control form-control-lg" placeholder="Apellidos"
-                                    aria-describedby="inputGroupPrepend1"required>
-                                </div>
+                        <div class="col-5">
+                            <div class="row">
+                                <p>Apellidos: </p>
                             </div>
+                            <div class="row">
+                                <input type="text" class="form-control form-control-lg" placeholder="Apellidos"
+                                    aria-describedby="inputGroupPrepend1" required>
+                            </div>
+                        </div>
                     </div>
                     <!-- Fila 2 -->
                     <div class="row mt-4">
                         <div class="col-4 mr-2">
                             <div class="row">
-                                   <p>DNI: </p>
+                                <p>DNI: </p>
                             </div>
                             <div class="row">
                                 <input type="text" class="form-control form-control-lg" placeholder="Numero DNI"
-                                aria-describedby="inputGroupPrepend1"required>
+                                    aria-describedby="inputGroupPrepend1" required>
                             </div>
                         </div>
                         <div class="col-2 mr-2">
                             <div class="row">
-                                   <p>CUI: </p>
+                                <p>CUI: </p>
                             </div>
                             <div class="row">
                                 <input type="text" class="form-control form-control-lg" placeholder="CUI"
-                                aria-describedby="inputGroupPrepend1"required>
+                                    aria-describedby="inputGroupPrepend1" required>
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="row">
-                                   <p>Fecha de emisión: </p>
+                                <p>Fecha de emisión: </p>
                             </div>
                             <div class="row">
                                 <input type="date" class="form-control form-control-lg" placeholder="dd/mm/aaaa"
-                                aria-describedby="inputGroupPrepend1"required>
+                                    aria-describedby="inputGroupPrepend1" required>
                             </div>
-                        </div>                    
+                        </div>
                     </div>
 
                     <!-- Fila 4 -->
                     <div class="row mt-4">
                         <div class="col-5 mr-2">
                             <div class="row">
-                                   <p>Número de celular: </p>
+                                <p>Número de celular: </p>
                             </div>
                             <div class="row">
                                 <input type="text" class="form-control form-control-lg" placeholder="Número de celular"
-                                aria-describedby="inputGroupPrepend1"required>
+                                    aria-describedby="inputGroupPrepend1" required>
                             </div>
                         </div>
                         <div class="col-5 mr-2">
                             <div class="row">
-                                   <p>Número de carnet militar: </p>
+                                <p>Número de carnet militar: </p>
                             </div>
                             <div class="row">
-                                <input type="text" class="form-control form-control-lg" placeholder="Código de colegiatura"
-                                aria-describedby="inputGroupPrepend1"required>
+                                <input type="text" class="form-control form-control-lg"
+                                    placeholder="Código de colegiatura" aria-describedby="inputGroupPrepend1" required>
                             </div>
-                        </div>                        
+                        </div>
                     </div>
                 </div>
 
@@ -185,56 +223,57 @@
                         <h3 class="font-weight-bold d-none d-sm-flex "> Asignación de Turno a Militar</h3>
                         <h4 class="font-weight-bold d-flex d-sm-none "> Asignación de Turno a Militar </h4>
                     </div>
-                    <!-- Formulario -->                    
+                    <!-- Formulario -->
                     <!-- Fila 1 -->
                     <div class="row mt-4">
                         <div class="col-3 mr-2">
                             <div class="row">
                                 <p>Departamento: </p>
-                         </div>
-                             <select name="my_html_select_box" class="form-control form-control-lg">
+                            </div>
+                            <select name="my_html_select_box" class="form-control form-control-lg">
 
-                                 <option selected="yes">Lima </option>
-                                 <option >Ancash</option>
-                                 <option>La Libertad</option>
-                             
-                             </select>           
+                                <option selected="yes">Lima </option>
+                                <option>Ancash</option>
+                                <option>La Libertad</option>
+
+                            </select>
                         </div>
                         <div class="col-3 mr-2">
                             <div class="row">
-                                   <p>Provincia: </p>
+                                <p>Provincia: </p>
                             </div>
-                                <select name="my_html_select_box" class="form-control form-control-lg">
+                            <select name="my_html_select_box" class="form-control form-control-lg">
 
-                                    <option selected="yes">Lima </option>
-                                    <option >Huaraz</option>
-                                    <option>Trujillo</option>
-                                
-                                </select>                            
+                                <option selected="yes">Lima </option>
+                                <option>Huaraz</option>
+                                <option>Trujillo</option>
+
+                            </select>
                         </div>
                         <div class="col-4">
                             <div class="row">
                                 <p>Distrito: </p>
-                         </div>
+                            </div>
                             <select name="my_html_select_box" class="form-control form-control-lg">
 
                                 <option selected="yes">Jesus María </option>
-                                <option >Lince</option>
+                                <option>Lince</option>
                                 <option>Puente Piedra</option>
-                            
-                            </select> 
+
+                            </select>
                         </div>
-                    
+
                     </div>
                     <!-- Fila 2 -->
                     <div class="row mt-4">
                         <div class="col-10">
                             <div class="row">
-                                   <p>Centro de Salud: </p>
+                                <p>Centro de Salud: </p>
                             </div>
                             <div class="row">
-                                <input type="text" class="form-control form-control-lg" placeholder="Nombre de centro de Salud"
-                                aria-describedby="inputGroupPrepend1"required>
+                                <input type="text" class="form-control form-control-lg"
+                                    placeholder="Nombre de centro de Salud" aria-describedby="inputGroupPrepend1"
+                                    required>
                             </div>
                         </div>
                     </div>
@@ -243,52 +282,52 @@
                     <div class="row mt-4">
                         <div class="col-4 mr-2">
                             <div class="row">
-                                   <p>Pabellón: </p>
+                                <p>Pabellón: </p>
                             </div>
                             <div class="row">
                                 <input type="text" class="form-control form-control-lg" placeholder="Pabellón "
-                                aria-describedby="inputGroupPrepend1"required>
+                                    aria-describedby="inputGroupPrepend1" required>
                             </div>
                         </div>
                         <div class="col-3 mr-2">
                             <div class="row">
-                                   <p>Horario de pabellón: </p>
+                                <p>Horario de pabellón: </p>
                             </div>
                             <div class="row">
-                                <input type="text" class="form-control form-control-lg" placeholder="Horario de pabellón"
-                                aria-describedby="inputGroupPrepend1"required>
+                                <input type="text" class="form-control form-control-lg"
+                                    placeholder="Horario de pabellón" aria-describedby="inputGroupPrepend1" required>
                             </div>
                         </div>
                         <div class="col-3 ">
                             <div class="row">
-                                   <p>Turno: </p>
+                                <p>Turno: </p>
                             </div>
                             <select name="my_html_select_box" class="form-control form-control-lg">
 
                                 <option selected="yes">Turno 1</option>
-                                <option >Turno 2</option>
+                                <option>Turno 2</option>
                                 <option>Turno 3</option>
-                            
+
                             </select>
                         </div>
-                    </div>                    
+                    </div>
                 </div>
             </div>
 
 
-            </div>
         </div>
+    </div>
     <!-- botones -->
-        <div class="form-row mb-4 text-center justify-content-center rounded">
-            <div class="form-group">
-                <a href="#" class="btn btn-lg btn-primary">
-                    <i class="fas fa-edit"></i> Registrar</i> </a>
+    <div class="form-row mb-4 text-center justify-content-center rounded">
+        <div class="form-group">
+            <a href="#" class="btn btn-lg btn-primary">
+                <i class="fas fa-edit"></i> Registrar</i> </a>
 
-                <a href="PanelPM.html" class="btn btn-lg btn-secondary">
-                    <i class="fas fa-window-close"></i> Cancelar </a>
-               
-            </div>
+            <a href="PanelPM.html" class="btn btn-lg btn-secondary">
+                <i class="fas fa-window-close"></i> Cancelar </a>
+
         </div>
+    </div>
 
     <!-- /#page-content-wrapper -->
     <footer class="mt-auto bg-dark text-light text-center">
@@ -301,7 +340,7 @@
     <script src="js/bootstrap.min.js "></script>
     <script src="js/popper.min.js "></script>
     <script>
-        $("#menu-toggle").click(function(e) {
+        $("#menu-toggle").click(function (e) {
             e.preventDefault();
             $("#wrapper").toggleClass("toggled");
         });
