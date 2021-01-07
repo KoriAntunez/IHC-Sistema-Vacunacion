@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     format: "a3",
                     orientation: 'portrait' // landscape o portrait
                 }
+             
             })
             .from($elementoParaConvertir)
             .save()
