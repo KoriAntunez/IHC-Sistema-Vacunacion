@@ -24,10 +24,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 text-left ">
-                    <h1 class="font-weight-bold display-4 d-none d-sm-flex">Sistema de Vacunación <br
-                            class="d-none d-lg-inline "> COVID 19</h1>
-                    <h2 class="font-weight-bold d-flex d-sm-none">Sistema de Vacunación <br class="d-none d-lg-inline ">
-                        COVID 19</h2>
+                    <h1 class="font-weight-bold display-4 d-none d-sm-flex">Sistema de Vacunación <br class="d-none d-lg-inline "> COVID 19</h1>
+                    <h2 class="font-weight-bold d-flex d-sm-none">Sistema de Vacunación <br class="d-none d-lg-inline "> COVID 19</h2>
                 </div>
                 <div class="d-none d-lg-flex col-lg-4 my-auto">
                     <a href="https://www.gob.pe/minsa/">
@@ -58,8 +56,7 @@
 
                 <div class="form-row">
                     <div class="col-8">
-                        <input type="text" id="dni" pattern="[0-9]{8}" class="form-control form-control-lg"
-                            placeholder="DNI (1)" aria-describedby="inputGroupPrepend1" required>
+                        <input type="text" id="dni" pattern="[0-9]{8}" class="form-control form-control-lg" placeholder="DNI (1)" aria-describedby="inputGroupPrepend1" required>
                         <small id="dniHelp" class="form-text text-muted">El número de DNI debe contener como máximo 8
                             caracteres</small>
                         <div class="valid-feedback">¡Correcto!</div>
@@ -67,8 +64,7 @@
                     </div>
 
                     <div class="col-3">
-                        <input type="text" id="cui" pattern="[0-9]{1}" class="form-control form-control-lg"
-                            placeholder="CUI (2)" aria-describedby="inputGroupPrepend2" required>
+                        <input type="text" id="cui" pattern="[0-9]{1}" class="form-control form-control-lg" placeholder="CUI (2)" aria-describedby="inputGroupPrepend2" required>
                         <small id="dniHelp" class="form-text text-muted">El número de CUI debe contener como máximo 1
                             caracter</small>
                         <div class="valid-feedback">¡Correcto!</div>
@@ -84,9 +80,7 @@
 
                 <div class="form-row mt-4">
                     <div class="col">
-                        <input type="date" id="fecha-emision" class="form-control form-control-lg" auto-slash="/"
-                            placeholder="Fecha de Emisión (3)" aria-describedby="inputGroupPrepend3" required
-                            pattern="(0?[1-9]|[12][0-9]|3[01])/(0?[1-9]|1[012])/\d{4}">
+                        <input type="date" id="fecha-emision" class="form-control form-control-lg" auto-slash="/" placeholder="Fecha de Emisión (3)" aria-describedby="inputGroupPrepend3" required pattern="(0?[1-9]|[12][0-9]|3[01])/(0?[1-9]|1[012])/\d{4}">
                         <small id="dniHelp" class="form-text text-muted ">La fecha de emisión debe seguir el siguiente
                             formato: dd/mm/yyyy</small>
                         <div class="valid-feedback">¡Correcto!</div>
@@ -96,12 +90,11 @@
 
                 <div class="form-row mt-4">
                     <div class="col">
-                            <input type="text" id="" pattern="[0-9]{8}" class="form-control form-control-lg"
-                                placeholder="Código de Colegiatura" aria-describedby="inputGroupPrepend4" required>
-                            <small id="dniHelp" class="form-text text-muted">El código de colegiatura debe contener como máximo 8
+                        <input type="text" id="" pattern="[0-9]{8}" class="form-control form-control-lg" placeholder="Código de Colegiatura" aria-describedby="inputGroupPrepend4" required>
+                        <small id="dniHelp" class="form-text text-muted">El código de colegiatura debe contener como máximo 8
                                 caracteres</small>
-                            <div class="valid-feedback">¡Correcto!</div>
-                            <div class="invalid-feedback">Proporcione un número de colegiatura válido</div>       
+                        <div class="valid-feedback">¡Correcto!</div>
+                        <div class="invalid-feedback">Proporcione un número de colegiatura válido</div>
                     </div>
                 </div>
 
@@ -122,10 +115,7 @@
             <!-- Sección de MINSA y Anuncio-->
             <div class="col-lg-6 mt-3 ml-auto my-4">
                 <div class="mt-4 embed-responsive embed-responsive-16by9 mb-2">
-                    <iframe class="embed-responsive-item" height="auto" src="https://www.youtube.com/embed/W2Nmz9ViOFA"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                    <iframe class="embed-responsive-item" height="auto" src="https://www.youtube.com/embed/W2Nmz9ViOFA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -137,22 +127,21 @@
 
     <!-- Reserva de derechos-->
     <footer class="mt-auto bg-dark text-light text-center">
-        <p> IHC-Grupo 4 Copyright © 2021 Todos los derechos reservados</p>
+        <p> IHC-Grupo 3 Copyright © 2021 Todos los derechos reservados</p>
     </footer>
 
 
 
     <!--Validacion-->
     <script>
-       
-        (function () {
+        (function() {
             'use strict';
-            window.addEventListener('load', function () {
-               
+            window.addEventListener('load', function() {
+
                 var forms = document.getElementsByClassName('needs-validation');
                 // Prevenir submit
-                var validation = Array.prototype.filter.call(forms, function (form) {
-                    form.addEventListener('submit', function (event) {
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
                         if (form.checkValidity() === false) {
                             event.preventDefault();
                             event.stopPropagation();
@@ -164,18 +153,17 @@
 
                 var inputs = document.getElementsByClassName('form-control')
 
-                 // Validación en tiempo real
-                var validation = Array.prototype.filter.call(inputs, function (input) {
+                // Validación en tiempo real
+                var validation = Array.prototype.filter.call(inputs, function(input) {
 
-                    input.addEventListener('blur', function (event) {
+                    input.addEventListener('blur', function(event) {
                         // reset
                         input.classList.remove('is-invalid')
                         input.classList.remove('is-valid')
 
                         if (input.checkValidity() === false) {
                             input.classList.add('is-invalid')
-                        }
-                        else {
+                        } else {
                             input.classList.add('is-valid')
                         }
                     }, false);
